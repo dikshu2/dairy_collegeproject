@@ -66,14 +66,9 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-4">
-              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+              <h2 class="text-uppercase text-center mb-5">Login</h2>
 
-              <form method="POST" action="database/signup.php">
-
-                <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example1cg" name="fname">Your Name</label>
-                </div>
+              <form method="POST" action ="check.php">
 
                 <div class="form-outline mb-4">
                   <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
@@ -81,25 +76,16 @@
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example3cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example3cg" name="number">Phone Number</label>
-                </div>
-
-                <div class="form-outline mb-4">
                   <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example4cg" name="pass1">Password</label>
                 </div>
 
-                <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cdg" name="pass2">Repeat your password</label>
-                </div>
 
                 <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php" class="fw-bold text-body"><u>Login here</u></a></p>
+                <p class="text-center text-muted mt-5 mb-0">Create an account <a href="signup.php" class="fw-bold text-body"><u>Sign Up here</u></a></p>
               </form>
 
             </div>

@@ -44,7 +44,7 @@
           <a class="nav-link " href="#">contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">login</a>
+          <a class="nav-link " href="login.php">login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
