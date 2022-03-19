@@ -36,7 +36,9 @@
           <a class="nav-link" href="#">product</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link " href="about.php" >about</a>
+          <a class="nav-link " href="about.php" >
+           about
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#">contact</a>
@@ -67,9 +69,25 @@
         </div>
       </div>
   </div>
-  
-</section>
+  </section>
 
+  <section class="about py-5">
+  <h2 class="head">ABOUT US</h2>
+                 <div class="para">
+                    <p>  We are online vegetable & fruits store. We deliver fresh vegetables and fruits.<br> 
+                         You can buy our produt, add to cart fill your address for delivery. We aim to<br> change 
+                          the traditionally way of buying vegetables and fruits. You don't <br>have to waste your time 
+                          on buying fruits and vegetables to a local markets<br> bargining with shopkeepers and bring your 
+                          bag. With us you can select the <br> product you want and buy online.We offer classic deals with 
+                          lowest prices and best quality products. Also, we take you to satisfy your hunger, we are then
+                           there for you at the time of your adrenaline cravings! So, get along with us and enjoy the best
+                            food you want!
+                            Our goal is to make you healthy and serve you fresh products for lifetime.   
+                     </p>
+                     <a href="product.php" class="btn3"> Shop now </a>
+               
+                </div>
+  </section>
 <section class="contact py-5">
   <div class="container py-5">
     <div class="row">

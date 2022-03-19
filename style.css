@@ -58,6 +58,9 @@
     padding-top: 20%;  
     color: #e9ecef  
 }
+.product{
+    padding-left: 5px;
+}
 .btn1{
     height: 45px;
     width: 35%;
@@ -69,6 +72,26 @@
     font-weight: 800;
     font-size: large;
     }
+    .btn3{
+        background: rgba(196, 114, 6, 0.671);
+        color:#fff;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        color: black;
+    }
+
+    .btn4{
+        background: rgba(65, 226, 132, 0.671);
+        color:#fff;
+        padding: 4px 15px;
+        margin: 30px 0;
+        border-radius: 5px;
+        color: black;
+    }
+    
+    
+    
     .news{
         background-color: black;
         color: white;
