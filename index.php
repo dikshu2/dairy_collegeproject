@@ -39,7 +39,7 @@
           <a class="nav-link " href="about.php" >about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">contact</a>
+          <a class="nav-link " href="#contact">contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="login.php">login</a>
@@ -70,7 +70,7 @@
   
 </section>
 
-<section class="contact py-5">
+<section class="contact py-5" id="contact">
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-5 m-auto text">
