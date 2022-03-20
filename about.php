@@ -30,10 +30,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active"  href="#">Home</a>
+          <a class="nav-link active"  href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">product</a>
+          <a class="nav-link" href="product.php">product</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link " href="about.php" >
@@ -84,7 +84,7 @@
                             food you want!
                             Our goal is to make you healthy and serve you fresh products for lifetime.   
                      </p>
-                     <a href="product.php" class="btn3"> Shop now </a>
+                     <a href="product.php"> Shop now </a>
                
                 </div>
   </section>

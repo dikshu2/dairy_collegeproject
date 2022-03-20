@@ -68,7 +68,7 @@
             <div class="card-body p-4">
               <h2 class="text-uppercase text-center mb-5">Login</h2>
 
-              <form method="POST" action ="check.php">
+              <form action ="database/check.php" method="post" >
 
                 <div class="form-outline mb-4">
                   <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
@@ -82,11 +82,28 @@
 
 
                 <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
+                  <button type="sumbit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Create an account <a href="signup.php" class="fw-bold text-body"><u>Sign Up here</u></a></p>
               </form>
+
+              <?php
+
+                        if(isset($_GET['errmsg'])){ ?>
+                          <div class="alert alert-danger">
+                              <?php echo $_GET['errmsg']; ?>
+                          </div>
+                      <?php  }
+                     ?>
+                     <?php
+
+                        if(isset($_GET['msg'])){ ?>
+                          <div class="alert alert-success">
+                              <?php echo $_GET['msg']; ?>
+                          </div>
+                      <?php  }
+                     ?>
 
             </div>
           </div>
@@ -95,5 +112,9 @@
     </div>
   </div>
 </section>
+                     
 </body>
+
+<script src="js/bootstrap.min.js"></script>
+
 </html>

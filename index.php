@@ -33,7 +33,7 @@
           <a class="nav-link active"  href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">product</a>
+          <a class="nav-link" href="product.php">product</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link " href="about.php" >about</a>

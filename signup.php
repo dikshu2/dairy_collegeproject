@@ -70,6 +70,9 @@
 
               <form method="POST" action="database/signup.php" onsubmit=" return validateForm()">
 
+              <form action="database/signup.php" method="post">
+
+
                 <div class="form-outline mb-4">
                   <input type="text" id="form3Example1cg"  name="fname"class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example1cg">Your Name</label>
@@ -97,10 +100,20 @@
 
                 <div class="d-flex justify-content-center">
                   <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  <button type="sumbit" name ="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"></button>
+
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php" class="fw-bold text-body"><u>Login here</u></a></p>
               </form>
+
+              <?php
+                        if(isset($_GET['errmsg'])){ ?>
+                          <div class="alert alert-danger">
+                              <?php echo $_GET['errmsg']; ?>
+                          </div>
+                      <?php  }
+                     ?>
 
             </div>
           </div>
@@ -109,9 +122,15 @@
     </div>
   </div>
 </section>
+
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 <script src="signup.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
 </body>
+
+
 </html>
