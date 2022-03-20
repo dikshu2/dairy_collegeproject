@@ -39,9 +39,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="">contact</a>
+          <a class="nav-link " href="#">contact</a>
         </li>
-        <li class="nav-item">contact.php
+        <li class="nav-item">
           <a class="nav-link " href="login.php">login</a>
         </li>
         <li class="nav-item">
@@ -75,8 +75,7 @@
 
                 <div class="form-outline mb-4">
 
-                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="[a-zA-Z0-9]+" minlength="10" maxlength="30" placeholder="eg-monty42"/>
-                  <input type="text" id=""  name="fname"class="form-control form-control-lg" />
+                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="[a-zA-Z]+"  placeholder="eg-monty42"/>
 
                   <label class="form-label" for="form3Example1cg">User Name</label>
                 </div>
