@@ -1,21 +1,65 @@
-$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-scroll="no-scroll"]').click(function(event) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1000, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { 
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); 
-            $target.focus(); 
-          };
-        });
-      }
+$(document).ready(function(){
+$(window).scroll(function(){
+    if(this.scrollY >20){
+    $('.navbar').addClass("sticky");
+    }else{
+        $('.navbar').removeClass("sticky"); 
     }
-  });
+     // scroll-up button show/hide script
+     if(this.scrollY > 500){
+        $('.scroll-up-btn').addClass("show");
+    }else{
+        $('.scroll-up-btn').removeClass("show");
+    }
+});
+ // slide-up script
+ $('.scroll-up-btn').click(function(){
+    $('html').animate({scrollTop: 0});
+    // removing smooth scroll on slide-up button click
+    $('html').css("scrollBehavior", "auto");
+});
+$('.navbar .menu li a').click(function(){
+    // applying again smooth scroll on menu items click
+    $('html').css("scrollBehavior", "smooth");
+});
+ // typing text animation script
+ var typed = new Typed(".typing", {
+    strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+var typed = new Typed(".typing-2", {
+    strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+//toggle menu/navbar  script
+$(' .menu-btn').click(function(){
+    $( '.navbar .menu').toggleClass("active");
+    $( ' .menu-btn i').toggleClass("active");
+});
+//owl carousel script
+$('.carousel').owlCarousel({
+    margin:20,
+    loop:true,
+    autoplayTimeOut:2000,
+    autoplayHovePause: true,
+    responsive: {
+        0:{
+            iteams:1,
+            nav:false
+        },
+        600:{
+            iteams:2,
+            nav:false
+        },
+        1000:{
+            iteams:3,
+            nav: false
+        }
+    }
+
+});
+});
