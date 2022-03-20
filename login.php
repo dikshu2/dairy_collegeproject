@@ -71,13 +71,13 @@
               <form action ="database/check.php" method="post" >
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example3cg" name="email">Your Email</label>
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" name="email" required />
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cg" name="pass1">Password</label>
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg"name="pass1" required/>
+                  <label class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
 

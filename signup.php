@@ -74,33 +74,33 @@
 
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg"  name="fname"class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example1cg">Your Name</label>
+                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="" />
+                  <label class="form-label" for="form3Example1cg">User Name</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" name="email" class="form-control form-control-lg" />
+                  <input type="email" id="" name="email" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example3cg" >Your Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example3cg" name="number" class="form-control form-control-lg" />
+                  <input type="number" id="" name="number" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example3cg" >Phone Number</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" name="pass1" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cg" >Password</label>
+                  <input type="password" id="" name="pass1" class="form-control form-control-lg" name="password"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                  <label class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cdg" name="pass2" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cdg" >Repeat your password</label>
+                  <input type="password" id="" name="pass2" class="form-control form-control-lg"/>
+                  <label class="form-label" for="form3Example4cdg" >Confirm password</label>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
-                  <button type="sumbit" name ="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"></button>
+                  <button type="sumbit" name ="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
 
                 </div>
 
