@@ -74,28 +74,28 @@
 
 
                 <div class="form-outline mb-4">
-                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="" />
+                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="[a-zA-Z0-9]+" minlength="10" maxlength="30" placeholder="eg-monty42"/>
                   <label class="form-label" for="form3Example1cg">User Name</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="" name="email" class="form-control form-control-lg" />
+                  <input type="email" id="" name="email" class="form-control form-control-lg" pattern=".+@gmail\.com|.+@yahoo\.com" placeholder="eg-monty42@gmail.com"/>
                   <label class="form-label" for="form3Example3cg" >Your Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="" name="number" class="form-control form-control-lg" />
+                  <input type="number" id="" name="number" class="form-control form-control-lg"  min="10"  placeholder="eg-+977-9841000000"/>
                   <label class="form-label" for="form3Example3cg" >Phone Number</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="" name="pass1" class="form-control form-control-lg" name="password"
+                  <input type="password" id="" name="pass1" class="form-control form-control-lg" name="password" placeholder="eg-Asd123@4"
                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
                   <label class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="" name="pass2" class="form-control form-control-lg"/>
+                  <input type="password" id="" name="pass2" class="form-control form-control-lg" placeholder="Please re-enter your password"/>
                   <label class="form-label" for="form3Example4cdg" >Confirm password</label>
                 </div>
 
