@@ -31,18 +31,18 @@
           <a class="nav-link active"  href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">product</a>
+          <a class="nav-link" href="profuct.php">product</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link " href="#" >
+          <a class="nav-link " href="about.php" >
            about
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">contact</a>
+          <a class="nav-link " href="">contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">login</a>
+        <li class="nav-item">contact.php
+          <a class="nav-link " href="login.php">login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
@@ -74,7 +74,7 @@
 
 
                 <div class="form-outline mb-4">
-                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="" />
+                  <input type="text" id=""  name="fname"class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example1cg">User Name</label>
                 </div>
 
