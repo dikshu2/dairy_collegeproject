@@ -78,18 +78,18 @@
                     <img src="image/product-3.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
-            <h6>pea</h6>
+            <h6>Pea</h6>
             <p>Rs60 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
 
             <div class="col-lg-3 py-3 text-center">
-            <div class="card border-2 bg-light mb-3">
+            <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
                     <img src="image/product-2.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
-            <h6>strawberry</h6>
+            <h6>Strawberry</h6>
             <p>Rs70 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
@@ -104,7 +104,61 @@
             <p>Rs60 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
+
+            <div class="col-lg-3  py-3 text-center">
+            <div class="card border-2 bg-light mb-2">
+                <div class="card-body">
+                    <img src="image/product-4.jpg" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+            <h6>Purple Cabbage</h6>
+            <p>Rs50 per kg</p>
+            <button type="submit"class="btn4">add to cart</button>
+            </div>
             
+            <div class="col-lg-3  py-3 text-center">
+            <div class="card border-2 bg-light mb-2">
+                <div class="card-body">
+                    <img src="image/product-5.jpg" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+            <h6>Tomato</h6>
+            <p>Rs90 per kg</p>
+            <button type="submit"class="btn4">add to cart</button>
+            </div>
+
+            <div class="col-lg-3  py-3 text-center">
+            <div class="card border-2 bg-light mb-2">
+                <div class="card-body">
+                    <img src="image/product-6.jpg" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+            <h6>Broccoli</h6>
+            <p>Rs80 per kg</p>
+            <button type="submit"class="btn4">add to cart</button>
+            </div>
+
+            <div class="col-lg-3 py-3 text-center">
+            <div class="card border-2 bg-light mb-2">
+                <div class="card-body">
+                    <img src="image/product-7.jpg" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+            <h6>Carrot</h6>
+            <p>Rs40 per kg</p>
+            <button type="submit"class="btn4">add to cart</button>
+            </div>
+
+            <div class="col-lg-3 py-3 text-center">
+            <div class="card border-2 bg-light mb-2">
+                <div class="card-body">
+                    <img src="image/product-9.jpg" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+            <h6>Onion</h6>
+            <p>Rs70 per kg</p>
+            <button type="submit"class="btn4">add to cart</button>
+            </div>
             
         </div>
         
