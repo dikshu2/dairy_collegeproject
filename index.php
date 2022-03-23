@@ -32,9 +32,27 @@
         <li class="nav-item">
           <a class="nav-link active"  href="index.php">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="product.php">product</a>
+
+        <!-- <li class="nav-item dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   product
+  </a>
+  <ul class="dropdown-menu">
+    <li> <a class="dropdown-menu" href="#">Vegetables</a></li>
+    <li><a class="dropdown-item" href="#">Fruits</a></li>
+  </ul>
+
+  </li> -->
+
+  <li class="dropdown">
+          <a class="nav-link "  >product</a>
+          <ul class="dropdown-content">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
         </li>
+
         <li class="nav-item ">
           <a class="nav-link " href="about.php" >about</a>
         </li>

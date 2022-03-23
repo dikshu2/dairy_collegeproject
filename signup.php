@@ -72,38 +72,35 @@
 
               <form action="database/signup.php" method="post">
 
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">UserName</label>
+                  <input type="text" id=""  name="fname"on select="alert('hello')" class="form-control form-control-lg" autocomplete="off" pattern="[a-zA-Z]+" required/>
+                 </div>
 
                 <div class="form-outline mb-4">
-
-                  <input type="text" id=""  name="fname"class="form-control form-control-lg" pattern="[a-zA-Z]+"/>
-
-                  <label class="form-label" for="form3Example1cg">User Name</label>
-                </div>
-
-                <div class="form-outline mb-4">
-                  <input type="email" id="" name="email" class="form-control form-control-lg" pattern=".+@gmail\.com|.+@yahoo\.com"/>
                   <label class="form-label" for="form3Example3cg" >Your Email</label>
-                </div>
+                  <input type="email" id="" name="email" class="form-control form-control-lg" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="" name="number" class="form-control form-control-lg"  min="10"/>
                   <label class="form-label" for="form3Example3cg" >Phone Number</label>
+                  <input type="number" id="" name="number" class="form-control form-control-lg"  min="10" required/>
                 </div>
 
                 <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg">Password</label>
                   <input type="password" id="" name="pass1" class="form-control form-control-lg" name="password"
                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
-                  <label class="form-label" for="form3Example4cg">Password</label>
+                  
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="" name="pass2" class="form-control form-control-lg"/>
-                  <label class="form-label" for="form3Example4cdg" >Confirm password</label>
+                <label class="form-label" for="form3Example4cdg" >Confirm password</label>  
+                <input type="password" id="" name="pass2" class="form-control form-control-lg" required/>   
                 </div>
 
                 <div class="d-flex justify-content-center">
                   <button type="sumbit" name ="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
-
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php" class="fw-bold text-body"><u>Login here</u></a></p>
@@ -124,14 +121,7 @@
     </div>
   </div>
 </section>
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-<script src="signup.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
-
 </body>
 
 
