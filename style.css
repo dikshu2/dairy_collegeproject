@@ -18,6 +18,7 @@
 .nav-link{
     margin-right: 10px;
     margin-left: 10px;
+    overflow: hidden;
     color: black;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -44,21 +45,26 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    /* list-style-type: none; */
-    text-decoration: none;
+    background-color: #ffffff;
+    list-style-type: none;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     
   }
-  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown-content li a{
+      color: black;
+      text-decoration: none;
+  }
+  .dropdown-content a:hover {
+      color: green
+    }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inline-block;
 }
-
 
 .search{
     height: 40px;
@@ -69,6 +75,7 @@
     font-family: 'Poppins', sans-serif;
     border: 2px solid rgb(6, 129, 47);
 }
+
 .btn0{
     height: 40px;
     width: 40%;
@@ -79,6 +86,7 @@
     border-radius: 60px;
     font-weight: 700;
 }
+
 .main{
    background-image:  url('image/bk3.jpg');
     background-size: cover;
@@ -86,15 +94,18 @@
     background-position: 50% 50%;
     width: 100%;
 }
+
 .main h1{
     font-size: 4rem;
     font-weight: 700;
     padding-top: 20%;  
     color: #e9ecef  
 }
+
 .product{
     padding-left: 5px;
 }
+
 .btn1{
     height: 45px;
     width: 35%;
@@ -106,6 +117,7 @@
     font-weight: 800;
     font-size: large;
     }
+
     .btn3{
         background: rgba(196, 114, 6, 0.671);
         color:#fff;
@@ -124,12 +136,11 @@
         color: black;
     }
     
-    
-    
     .news{
         background-color: black;
         color: white;
     }
+
     .btn2{
         height: 35px;
         width: 100px;
@@ -138,6 +149,7 @@
         font-weight: 600;
         border-radius: 3px;
     }
+
     .news input{
         height: 35px;
         width: 55%;
@@ -149,12 +161,15 @@
         font-weight: 600;
         border-radius: 3px;
     }
+
     .news::-moz-placeholder{
         color: #e7f1e3;
     }
+
     .news p{
         margin: 0;
     }
+
     .fab{
         font-size: 10rem;
         cursor: pointer;
