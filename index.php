@@ -22,59 +22,47 @@
   <body>
 
 <div class="bc">
-    <nav class="navbar navbar-expand-lg ">
-  <div class="container">
-    <a class="navbar-brand" href="index.php">Vege</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">Vege</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link active"  href="index.php">Home</a>
-        </li>
+            <li class="nav-item"> 
+              <a class="nav-link active"  href="index.php">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link "  >product</a>
+              <ul class="dropdown-content">
+                <li><a href="vegetable.php">Vegetables</a></li>
+                <li><a href="fruit.php">Fruits</a></li>
+              </ul>
+            </li>
 
-        <!-- <li class="nav-item dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   product
-  </a>
-  <ul class="dropdown-menu">
-    <li> <a class="dropdown-menu" href="#">Vegetables</a></li>
-    <li><a class="dropdown-item" href="#">Fruits</a></li>
-  </ul>
-
-  </li> -->
-
-  <li class="nav-item dropdown">
-          <a class="nav-link "  >product</a>
-          <ul class="dropdown-content">
-            <li><a href="vegetable.php">Vegetables</a></li>
-            <li><a href="fruit.php">Fruits</a></li>
+            <li class="nav-item ">
+              <a class="nav-link " href="about.php" >about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contact">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="login.php">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
+            </li>
           </ul>
-        </li>
-
-        <li class="nav-item ">
-          <a class="nav-link " href="about.php" >about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#contact">contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="login.php">login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
-        </li>
-      </ul>
       
-      <form class="d-flex">
-        <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn0" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+          <form class="d-flex">
+            <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn0" type="submit">Search</button>
+          </form>
+        </div>
+     </div>
+   </nav>
 </div>
 
 <section class="main">
@@ -86,7 +74,6 @@
         </div>
       </div>
   </div>
-  
 </section>
 
 <section class="contact py-5" id="contact">
