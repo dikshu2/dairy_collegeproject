@@ -1,16 +1,17 @@
 <?php
   $name = $_POST['fname'];
   $email = $_POST['email'];
+  $address = $_POST['address'];
   $number = $_POST['number'];
   $pass1 = $_POST['pass1'];
   $pass2 = $_POST['pass2'];
    if($pass1===$pass2){
        $encryptedPassword = md5($pass1);
      include('connect.php');
-     $query = "INSERT INTO users(userName,email,phoneNo,password) 
-     VALUES ('$name','$email','$number','$encryptedPassword')";
+     $query = "INSERT INTO users(userName,email,address,phoneNo,password) 
+     VALUES ('$name','$email','$address','$number','$encryptedPassword')";
      if(mysqli_query($conn,$query)){
-         $msg ="signup successfull";
+         $msg ="signup sauccessfull";
          header('location:../index.php?msg='.$msg);
      }else{
          $msg = "Error:".mysqli_error($conn);
@@ -27,7 +28,7 @@
     $username = $_POST['fname'];
     $email = $_POST['email'];
 
-    if($username != null or $username != "") {
+    if($username != null || $username != "") {
         $checkUsernameUnique =  "SELECT count(id) from users where username ='$username'";
 
         if($checkUsernameUnique > 0) {
@@ -36,15 +37,23 @@
 
     }
 
-    if($email != null or $email != "") {
-        $emailUnique =  "SELECT count(id) from users where email ='$email'";
+    // if($email != null || $email != "") {
+    //     $emailUnique =  "SELECT count(id) from users where email ='$email'";
 
-        if($emailUnique > 0) {
-            echo "Email is already in use. Please use another email and proceed";
+    //     if($emailUnique > 0) {
+    //         echo "Email is already in use. Please use another email and proceed";
+    //     }
+
+    // }
+    if($email != "") {
+        $result = mysql_query("SELECT * FROM emails where email='".$email."'");
+        $num_rows = mysql_num_rows($result);
+        if($num_rows >= 1){
+            echo "email exist";
+        }else{
+            $sql = mysql_query ("INSERT INTO emails (email) VALUES ('$email')");
+            echo "Thank you for Submitting. Redirecting back to Home Page";
         }
-
     }
-
-
-   }
+ }
 ?>

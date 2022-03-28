@@ -38,13 +38,18 @@ include 'header.php'
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">UserName</label>
-                  <input type="text" id=""  name="fname"on select="alert('hello')" class="form-control form-control-lg" autocomplete="off" pattern="[a-zA-Z]+" required/>
+                  <input type="text" id=""  name="fname"on select="alert('hello')" class="form-control form-control-lg" autocomplete="off"  required/>
                  </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example3cg" >Your Email</label>
                   <input type="email" id="" name="email" class="form-control form-control-lg" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
                  </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg" >Address</label>
+                  <input type="text" id="" name="address" class="form-control form-control-lg" autocomplete="off" required/>
+                </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example3cg" >Phone Number</label>

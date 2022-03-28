@@ -176,3 +176,9 @@
         padding-right: 5px;
         
     }
+
+    .anchortag{
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+    }

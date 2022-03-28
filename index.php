@@ -35,7 +35,7 @@
               <a class="nav-link active"  href="index.php">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link "  >product</a>
+              <a class="nav-link">product</a>
               <ul class="dropdown-content">
                 <li><a href="vegetable.php">Vegetables</a></li>
                 <li><a href="fruit.php">Fruits</a></li>
@@ -119,54 +119,8 @@
     </div>
    </div>
 </section>
-
-<section class="news py-6">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-lg-9 m-auto text-center">
-        <h1>stay with us</h1>
-        <input type="text" name="" class="px-4" placeholder="Enter your email" id="">
-        <button class="btn2 ">submit</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-11 py-4">
-        <div class="row">
-          <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
-          </div>
-          
-          <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
-          </div>
-
-          <div class="col-lg-3">
-            <h5 class="pb-3" >CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
-          </div>
-          <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <span><i class="fa-brands fa-facebook fa-2x"></i></span>
-            <span><i class="fa-brands fa-instagram fa-2x"></i></span>
-            <span><i class="fa-brands fa-twitter fa-2x"></i></span>
-            
-          </div>
-        
-      </div>
-    </div>
-    <div>
-    <hr>
-    <p>copyright@2022</p>
-    </div>
-  </div>
-</section>
-  </body>
+<?php
+include 'footer.php'
+?>
+ </body>
 </html>

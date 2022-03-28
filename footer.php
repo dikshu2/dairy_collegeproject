@@ -24,28 +24,30 @@
 <!-- footer -->
 <section class="news py-6">
   <div class="container py-5">
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-lg-9 m-auto text-center">
         <h1>stay with us</h1>
         <input type="text" name="" class="px-4" placeholder="Enter your email" id="">
         <button class="btn2 ">submit</button>
       </div>
-    </div>
+    </div> -->
     <div class="row">
       <div class="col-lg-11 py-4">
         <div class="row">
           <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
+            <h5 class="pb-3">Vege</h5>
+            <p>Nature Has Always Cared For Us!</p>
           </div>
           
           <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
+            <h5 class="pb-3">Menu</h5>
+            <div class="anchortag">
+              <ul>
+              <li><a href="index.php" >home</a></li>
+              <li><a href="about.php">about</a></li>
+              <li><a href="contact.php">contact</a></li>
+              </ul>
+            </div>
           </div>
 
           <div class="col-lg-3">
@@ -56,9 +58,9 @@
           </div>
           <div class="col-lg-3">
             <h5 class="pb-3">CUSTOMER CARE</h5>
-            <span><i class="fa-brands fa-facebook fa-2x"></i></span>
-            <span><i class="fa-brands fa-instagram fa-2x"></i></span>
-            <span><i class="fa-brands fa-twitter fa-2x"></i></span>
+            <span><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a></span>
+            <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a></span>
+            <span><a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2x"></i></a></span>
             
           </div>
         
