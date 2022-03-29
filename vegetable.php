@@ -18,7 +18,7 @@ include 'header.php'
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-3.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/pea.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
             <h6>Pea</h6>
@@ -29,10 +29,10 @@ include 'header.php'
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-2.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/onion.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
-            <h6>Strawberry</h6>
+            <h6>onion</h6>
             <p>Rs70 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
@@ -40,7 +40,7 @@ include 'header.php'
             <div class="col-lg-3 py-3  text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-1.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/capsicum.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
             <h6>Capsicum</h6>
@@ -51,10 +51,10 @@ include 'header.php'
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-4.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/carrot.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
-            <h6>Purple Cabbage</h6>
+            <h6>carrot</h6>
             <p>Rs50 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
@@ -62,7 +62,7 @@ include 'header.php'
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-5.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/tomato.jpg" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
             <h6>Tomato</h6>
@@ -84,10 +84,10 @@ include 'header.php'
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-7.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/potato.png" class="" height="220px"alt="" srcset="">
                 </div>
             </div>
-            <h6>Carrot</h6>
+            <h6>potato</h6>
             <p>Rs40 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
@@ -95,10 +95,10 @@ include 'header.php'
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-9.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/lemon.jpg" class=""height="220px" alt="" srcset="">
                 </div>
             </div>
-            <h6>Onion</h6>
+            <h6>lemon</h6>
             <p>Rs70 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>

@@ -17,14 +17,14 @@
 <script src="https://kit.fontawesome.com/62f5df6ae3.js" crossorigin="anonymous"></script>
 <!-- css link -->
 <link rel="stylesheet" href="style.css">
-    <title>asdsad</title>
+    <title></title>
   </head>
   <body>
 
   <!-- header -->
 <div class="bc">
   <nav class="navbar navbar-expand-lg ">
-    <div class="container">
+    <!-- <div class="container"> -->
       <a class="navbar-brand" href="index.php">Vege</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
