@@ -7,8 +7,6 @@
   $query = "SELECT * FROM users WHERE email = '$email' AND password = '$encryptedPassword'";
   $result = mysqli_query($conn,$query);
   $count = mysqli_num_rows($result);
-
-  echo $count;
   if($count==1){
       $msg = "login successfull";
       header('Location:../index.php?msg='.$msg);
