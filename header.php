@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+<link rel="stylesheet" href="Css_F/css/bootstrap.min.css">
 <!-- google font link -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +35,7 @@
               <a class="nav-link active"  href="index.php">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link "  >product</a>
+              <a class="nav-link">product</a>
               <ul class="dropdown-content">
                 <li><a href="vegetable.php">Vegetables</a></li>
                 <li><a href="fruit.php">Fruits</a></li>
@@ -47,7 +46,7 @@
               <a class="nav-link " href="about.php" >about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#contact">contact</a>
+              <a class="nav-link " href="contact.php">contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="login.php">login</a>
