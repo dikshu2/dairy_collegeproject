@@ -14,12 +14,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="signup.css"> -->
 <script src="https://kit.fontawesome.com/62f5df6ae3.js" crossorigin="anonymous"></script>
-    <title>online vegetable store</title>
+    <title>Online vegetable store</title>
   </head>
   <body style="background-image: url('image/bk4.jpg');">
 
   <?php
-include 'header.php'
+     include 'header.php'
 ?>
 
 <!-- form -->
@@ -59,8 +59,8 @@ include 'header.php'
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example4cg">Password</label>
                   <input type="password" id="" name="pass1" class="form-control form-control-lg" name="password"
-                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
-                  
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                  <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" -->
                 </div>
 
                 <div class="form-outline mb-4">
@@ -76,9 +76,9 @@ include 'header.php'
               </form>
 
               <?php
-                        if(isset($_GET['errmsg'])){ ?>
+                        if(isset($_GET['msg'])){ ?>
                           <div class="alert alert-danger">
-                              <?php echo $_GET['errmsg']; ?>
+                              <?php echo $_GET['msg']; ?>
                           </div>
                       <?php  }
                      ?>
