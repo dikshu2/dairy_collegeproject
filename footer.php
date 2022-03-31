@@ -41,11 +41,11 @@
           
           <div class="col-lg-3">
             <h5 class="pb-3">Menu</h5>
-            <div class="anchortag">
-              <ul>
-              <li><a href="index.php" >home</a></li>
-              <li><a href="about.php">about</a></li>
-              <li><a href="contact.php">contact</a></li>
+            <div >
+              <ul class="anchortag">
+              <li><a href="index.php" >Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="contact.php">Contact</a></li>
               </ul>
             </div>
           </div>

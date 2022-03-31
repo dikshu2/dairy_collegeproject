@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- css link -->
-    <link rel="stylesheet" href="style.css">
+
 <!-- google font link -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 <!-- font awesome link -->
 <script src="https://kit.fontawesome.com/62f5df6ae3.js" crossorigin="anonymous"></script>
+
+<!-- css link -->
+<link rel="stylesheet" href="about.css">
     <title>about</title>
     
   
@@ -43,6 +45,10 @@ include 'header.php'
         <h2 class="head">ABOUT US</h2>
      </div>
      <div class="content">
+       <div class="image-section">
+             <img src="image/bk5.jpg" alt="" srcset="" >
+          </div>
+     
        <div class="article">
           <p>  We are online vegetable & fruits store. We deliver fresh vegetables and fruits.<br> 
               You can buy our produt, add to cart fill your address for delivery. We aim to<br> 
@@ -59,25 +65,19 @@ include 'header.php'
           <p> Our goal is to make you healthy and serve you fresh products for lifetime. 
               <br>So, get along with us and enjoy the bestfood you want!   
           </p>
-       </div>
-
-       <div class="button">
+          <div class="button">
          <a href="vegetable.php">Shop Now</a>
        </div>
-      </div>
-      <div class="image-section">
-        <img src="image/bk5.jpg" alt="" srcset="" >
+       </div> 
       </div>
    </div>
  </div>
-  
-
-     
-          
+<div>
 
 <?php
 include 'footer.php'
 ?>
+</div>
 
   </body>
 </html>
