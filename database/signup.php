@@ -1,4 +1,5 @@
 <?php
+  $fullname = $_POST['fullname'];
   $username = $_POST['fname'];
   $email = $_POST['email'];
   $address = $_POST['address'];
@@ -18,8 +19,8 @@
         else {
             if($pass1===$pass2){
                 $encryptedPassword = md5($pass1);
-                    $query = "INSERT INTO users(userName,email,address,phoneNo,password) 
-                    VALUES ('$username','$email','$address','$number','$encryptedPassword')";
+                    $query = "INSERT INTO users(fullName,userName,email,address,phoneNo,password) 
+                    VALUES ('$fullname','$username','$email','$address','$number','$encryptedPassword')";
                     if(mysqli_query($conn,$query)){
                         $msg ="Signup sauccessfull";
                         header('location:../index.php?msg='.$msg);

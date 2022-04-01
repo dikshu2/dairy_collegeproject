@@ -36,9 +36,14 @@ include 'header.php'
 
               <form action="database/signup.php" method="post">
 
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Full Name</label>
+                  <input type="text" id=""  name="fullname" class="form-control form-control-lg" autocomplete="off"  required/>
+                 </div>
+
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">UserName</label>
-                  <input type="text" id=""  name="fname"on select="alert('hello')" class="form-control form-control-lg" autocomplete="off"  required/>
+                  <input type="text" id=""  name="fname" class="form-control form-control-lg" autocomplete="off"  required/>
                  </div>
 
                 <div class="form-outline mb-4">

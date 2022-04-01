@@ -35,12 +35,12 @@ include 'header.php'
 
                 <div class="form-outline mb-4">
                   <label class="form-label" autocomplete="off" for="form3Example3cg">Your Email</label>
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" name="email" required />                  
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" name="email" auto-complete="off" required />                  
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example4cg">Password</label>
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg"name="pass1" required/>                 
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg"name="pass1" auto-complete="off"required/>                 
                 </div>
 
 
