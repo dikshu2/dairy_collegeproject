@@ -38,11 +38,20 @@ include 'header.php'
 
               <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">Full Name</label>
+<<<<<<< HEAD
                   <input type="text" id=""  name="fullname" class="form-control form-control-lg" autocomplete="off" required>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">UserName</label>
                   <input type="text" id=""  name="fname" class="form-control form-control-lg" autocomplete="off"  pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$" title=" username can be alphabets, numbers or an underscore"required/>
+=======
+                  <input type="text" id=""  name="fullname" class="form-control form-control-lg" autocomplete="off"  required/>
+                 </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">UserName</label>
+                  <input type="text" id=""  name="fname" class="form-control form-control-lg" autocomplete="off"  required/>
+>>>>>>> d8e2ee8a9fb73eabbb73efc169520096ed5ee487
                  </div>
 
                 <div class="form-outline mb-4">

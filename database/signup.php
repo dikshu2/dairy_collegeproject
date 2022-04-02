@@ -19,7 +19,11 @@
         else {
             if($pass1===$pass2){
                 $encryptedPassword = md5($pass1);
+<<<<<<< HEAD
                     $query = "INSERT INTO users( fullname,userName,email,address,phoneNo,password) 
+=======
+                    $query = "INSERT INTO users(fullName,userName,email,address,phoneNo,password) 
+>>>>>>> d8e2ee8a9fb73eabbb73efc169520096ed5ee487
                     VALUES ('$fullname','$username','$email','$address','$number','$encryptedPassword')";
                     if(mysqli_query($conn,$query)){
                         $msg ="Signup sauccessfull";
