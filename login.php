@@ -40,7 +40,19 @@ include 'header.php'
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example4cg">Password</label>
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg"name="pass1" required/>                 
+                  <input type="password" id="myInput" class="form-control form-control-lg"name="pass1" required/>                 
+                  
+                  <input type="checkbox" onclick="myFunction()">Show Password
+                       <script>
+                        function myFunction() {
+                          var x = document.getElementById("myInput");
+                          if (x.type === "password") {
+                            x.type = "text";
+                          } else {
+                            x.type = "password";
+                          }
+                        }
+                      </script>
                 </div>
 
 

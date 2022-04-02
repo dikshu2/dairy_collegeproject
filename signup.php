@@ -36,9 +36,13 @@ include 'header.php'
 
               <form action="database/signup.php" method="post">
 
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Full Name</label>
+                  <input type="text" id=""  name="fullname" class="form-control form-control-lg" autocomplete="off" required>
+
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">UserName</label>
-                  <input type="text" id=""  name="fname"on select="alert('hello')" class="form-control form-control-lg" autocomplete="off"  required/>
+                  <input type="text" id=""  name="fname" class="form-control form-control-lg" autocomplete="off"  pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$" title=" username can be alphabets, numbers or an underscore"required/>
                  </div>
 
                 <div class="form-outline mb-4">
@@ -53,14 +57,26 @@ include 'header.php'
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example3cg" >Phone Number</label>
-                  <input type="number" id="" name="number" class="form-control form-control-lg"  min="10" required/>
+                  <input type="number" id="" name="number" class="form-control form-control-lg"  pattern="/^\+?([0-9]{2})\)?[-]?([0-9]{3})?[-]?([0-9]{3})?[-]?([0-9]{4})$/" required/>
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example4cg">Password</label>
-                  <input type="password" id="" name="pass1" class="form-control form-control-lg" name="password"
+                  <input type="password" id="myInput" name="pass1" class="form-control form-control-lg" name="password"
                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
-                  
+                   <!-- <i class="bi bi-eye-slash" id="togglePassword"onclick="myFunction()"></i> -->
+                   <input type="checkbox" onclick="myFunction()">Show Password
+                       <script>
+                        function myFunction() {
+                          var x = document.getElementById("myInput");
+                          if (x.type === "password") {
+                            x.type = "text";
+                          } else {
+                            x.type = "password";
+                          }
+                        }
+                      </script>
+
                 </div>
 
                 <div class="form-outline mb-4">
