@@ -1,6 +1,6 @@
 <?php
-  $fullname = $_POST['fullname'];
-  $username = $_POST['fname'];
+    SESSION_start();
+  $fullname=$_POST['fullname'];
   $email = $_POST['email'];
   $address = $_POST['address'];
   $number = $_POST['number'];
@@ -8,7 +8,9 @@
   $pass2 = $_POST['pass2'];
 
   include('connect.php');
-    if($email != null && $email != "") {
+  
+    if($email != null && $email != "") 
+    {
         $checkEmailUnique =  "SELECT * from users where email ='$email'";
         $finalRe = mysqli_query($conn, $checkEmailUnique);
         $numRows = mysqli_num_rows($finalRe);
@@ -16,11 +18,14 @@
             $msg =  "Email is already in use. Please use another email and proceed.";
             header('location:../signup.php?msg='.$msg);
         }
-        else {
-            if($pass1===$pass2){
+        else 
+        {
+            if($pass1===$pass2)
+            {
                 $encryptedPassword = md5($pass1);
-                    $query = "INSERT INTO users(fullName,userName,email,address,phoneNo,password) 
-                    VALUES ('$fullname','$username','$email','$address','$number','$encryptedPassword')";
+                    $query = "INSERT INTO users(fullname,userName,email,address,phoneNo,password) 
+                    VALUES ('$fullname','$email','$address','$number','$encryptedPassword')";
+
                     if(mysqli_query($conn,$query)){
                         $msg ="Signup sauccessfull";
                         header('location:../index.php?msg='.$msg);
@@ -32,8 +37,12 @@
                 }else{
                     $msg = "password and confirm password does not match";
                     header('Location:../signup.php?errmsg='.$msg);
-                }
-
             }
+
         }
+    }
+    else{
+        $msg = "Enter the email";
+        header('Location:../signup.php?errmsg='.$msg);
+    }
 ?>

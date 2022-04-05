@@ -33,6 +33,23 @@ include 'header.php'
 
               <form action ="database/check.php" method="post" >
 
+              <?php
+
+if(isset($_GET['errmsg'])){ ?>
+  <div class="alert alert-danger">
+      <?php echo $_GET['errmsg']; ?>
+  </div>
+<?php  }
+?>
+<?php
+
+if(isset($_GET['msg'])){ ?>
+  <div class="alert alert-success">
+      <?php echo $_GET['msg']; ?>
+  </div>
+<?php  }
+?>
+
                 <div class="form-outline mb-4">
                   <label class="form-label" autocomplete="off" for="form3Example3cg">Your Email</label>
                   <input type="email" id="form3Example3cg" class="form-control form-control-lg" name="email" auto-complete="off" required />                  
@@ -40,7 +57,19 @@ include 'header.php'
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example4cg">Password</label>
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg"name="pass1" auto-complete="off"required/>                 
+                  <input type="password" id="myInput" class="form-control form-control-lg"name="pass1" required/>                 
+                  
+                  <input type="checkbox" onclick="myFunction()"> Show Password
+                       <script>
+                        function myFunction() {
+                          var x = document.getElementById("myInput");
+                          if (x.type === "password") {
+                            x.type = "text";
+                          } else {
+                            x.type = "password";
+                          }
+                        }
+                      </script>  
                 </div>
 
 
@@ -51,23 +80,7 @@ include 'header.php'
                 <p class="text-center text-muted mt-5 mb-0">Create an account <a href="signup.php" class="fw-bold text-body"><u>Sign Up here</u></a></p>
               </form>
 
-              <?php
-
-                        if(isset($_GET['errmsg'])){ ?>
-                          <div class="alert alert-danger">
-                              <?php echo $_GET['errmsg']; ?>
-                          </div>
-                      <?php  }
-                     ?>
-                     <?php
-
-                        if(isset($_GET['msg'])){ ?>
-                          <div class="alert alert-success">
-                              <?php echo $_GET['msg']; ?>
-                          </div>
-                      <?php  }
-                     ?>
-
+             
             </div>
           </div>
         </div>
