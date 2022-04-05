@@ -35,48 +35,15 @@
   </div>
 </section>
 
-<section class="contact py-5">
-  <div class="container py-5">
+<section>
+  <div class="container">
     <div class="row">
-      <div class="col-lg-5 m-auto text">
-        <h1>Contact us</h1>
-        <h6 style="color: red;"> Always Be In Touch With Us</h6>
-      </div>
+    <div class="col-sm">
+      <img src="" alt="" srcset="">
     </div>
-    <div class="row py-5">
-      <div class="col-lg-9 m-auto">
-        <div class="row">
-          <div class="col-lg-4">
-            <h6>location</h6>
-              <p>Kathmandu,Nepal<p>
-      
-            <h6>Phone</h6>
-             <p>98601178545</p>
-    
-            <h6>email</h6>
-              <p>abcd@gmail.com</p>
-     
-          </div>
-          <div class="col-lg-7">
-            <div class="row">
-              <div class="col-lg-6">
-                <input type="text" name="" class="form-cotrol bg-light" placeholder="enter firstname"id="">
-              </div>
-              <div class="col-lg-6">
-                <input type="text" name="" class="form-cotrol bg-light" placeholder="enter lastname"id="">
-              </div>
-              <div class="row">
-                  <div class="col-lg-12 py-3">
-                    <textarea name="" class="form-control bg-light " id="" placeholder="write a message"cols="30" rows="5"></textarea>
-                  </div>
-              </div>
-              <button class="btn1">submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-   </div>
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+  </div>
 </section>
 <?php
 include 'footer.php'
