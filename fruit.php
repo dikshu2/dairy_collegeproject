@@ -17,10 +17,10 @@ include 'header.php'
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/pomogranate.jpg" class="" height="220px"alt="" srcset="">
+                    <img src="image/pomegranate.png" class="" height="220px"alt="" srcset="">
                 </div>
             </div>
-            <h6>pomogranate</h6>
+            <h6>pomegranate</h6>
             <p>Rs60 per kg</p>
             <button type="submit"class="btn4">add to cart</button>
             </div>
@@ -83,7 +83,7 @@ include 'header.php'
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-7.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/orange.png" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
             <h6>Carrot</h6>
@@ -94,7 +94,7 @@ include 'header.php'
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-9.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/black grapes.png" class="img-fluid" alt="" srcset="">
                 </div>
             </div>
             <h6>Onion</h6>

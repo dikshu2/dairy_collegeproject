@@ -34,6 +34,7 @@
             <li class="nav-item"> 
               <a class="nav-link active"  href="index.php">Home</a>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link">product</a>
               <ul class="dropdown-content">
@@ -45,12 +46,34 @@
             <li class="nav-item ">
               <a class="nav-link " href="about.php" >about</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link " href="contact.php">contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="login.php">login</a>
+
+            <li class="nav-item dropdown">
+                <?php
+                  session_start();
+                  if(isset($_SESSION['name'])){
+                    ?>
+                    <a class="nav-link">
+                      <?php
+                    echo $_SESSION['name'];
+                    ?>
+                    </a>
+                <ul class="dropdown-content">
+                  <li><a href="logout.php">logout</a></li>
+                </ul>
+              <?php
+                }else{
+              ?>
+              <a class="nav-link" href="login.php">login</a>
+                
+              <?php
+                }
+              ?>
             </li>
+
             <li class="nav-item">
               <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
             </li>

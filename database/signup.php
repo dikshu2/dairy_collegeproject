@@ -23,7 +23,7 @@
             if($pass1===$pass2)
             {
                 $encryptedPassword = md5($pass1);
-                    $query = "INSERT INTO users(fullname,userName,email,address,phoneNo,password) 
+                    $query = "INSERT INTO users(fullname,email,address,phoneNo,password) 
                     VALUES ('$fullname','$email','$address','$number','$encryptedPassword')";
 
                     if(mysqli_query($conn,$query)){

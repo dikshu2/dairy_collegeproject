@@ -14,10 +14,7 @@
 
 <?php
 include 'header.php';
-session_start();
 ?>
-
-<h1> <?php $_SESSION['name']?></h1>
 <section class="product">
         <div class="row py-3">
             <div class="col-lg-3  py-3 text-center">
@@ -30,7 +27,7 @@ session_start();
             <p>Rs.<span id="price">60</span></p>
             <div class="quantity">
                 <button class="button minus-btn" type="button">-</button>
-                <input type="text" id="price" value="1">
+                <input type="text" id="1" value="1">
                 <button class="button plus-btn" type="button">+</button>
             </div>
             <button type="submit"class="btn4">add to cart</button>
@@ -43,10 +40,10 @@ session_start();
                 </div>
             </div>
             <h6>onion</h6>
-            <p>Rs.<span id="price2">70</span></p>
+            <p>Rs.<span id="price">70</span></p>
             <div class="quantity">
                 <button class="button minus-btn" type="button">-</button>
-                <input type="text" id="price2" value="1">
+                <input type="text" id="2" value="1">
                 <button class="button plus-btn" type="button">+</button>
             </div>
             <button type="submit"class="btn4">add to cart</button>
