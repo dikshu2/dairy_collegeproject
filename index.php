@@ -41,10 +41,10 @@
   <div class="container">
     <div class="row">
     <div class="col-sm">
-      <img src="" alt="" srcset="">
+      <img src="image/chilli.jpg" width="300px" alt="" srcset="">
     </div>
-  <div class="col-sm">col-sm</div>
-  <div class="col-sm">col-sm</div>
+  <div class="col-sm"><img src="image/tomato.jpg"width="300px" height="500px" alt="" srcset=""></div>
+  <div class="col-sm"><img src="image/pineapple.jpg"width="300px"alt="" srcset=""></div>
   </div>
 </section>
 <?php
