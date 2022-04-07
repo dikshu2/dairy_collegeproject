@@ -22,8 +22,6 @@
 
   <?php
   include 'header.php';
-  session_start();
-  echo $_SESSION['name'];
   ?>
 
 <section class="main">

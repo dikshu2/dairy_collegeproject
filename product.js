@@ -1,14 +1,13 @@
 
 //taking value to increment decrement input value
 var newValue = 0;
-
 var price = document.getElementById("price").innerText;
 
-function priceTotal(value){
+function priceTotal(value, div){
     var total = value * price;
-    // console.log(total)
-    document.getElementById("price").innerText = total
-}
+    console.log(div)
+    div.parentElement.parentElement.children[2].children[0].innerText = total
+    }
 
 var incrementButton = document.getElementsByClassName('plus-btn');
 var decrementButton = document.getElementsByClassName('minus-btn');
@@ -22,10 +21,9 @@ for(var i = 0; i < incrementButton.length; i++){
         var inputValue = input.value;
         var newValue = parseInt(inputValue) + 1;
         input.value = newValue;
-        // console.log(newValue)
-
     // calling price function
-    priceTotal(newValue);
+    console.log(buttonClicked)
+    priceTotal(newValue, buttonClicked);
 })}
 
 

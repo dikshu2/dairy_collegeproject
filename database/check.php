@@ -1,5 +1,7 @@
 <?php
   include('connect.php');
+  $fullname = $_POST['fullname'];
+  // $address = $_POST['address'];
   $email = $_POST['email'];
   $password = $_POST['pass1'];
   $encryptedPassword = md5($password); 
