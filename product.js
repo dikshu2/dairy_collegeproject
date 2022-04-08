@@ -4,8 +4,9 @@ var newValue = 0;
 var price = document.getElementById("price").innerText;
 
 function priceTotal(value, div){
+    // var price = div.parentElement.parentElement.children[1].innerText;
     var total = value * price;
-    console.log(div)
+    console.log(total)
     div.parentElement.parentElement.children[2].children[0].innerText = total
     }
 
@@ -42,7 +43,7 @@ for(var i = 0; i < decrementButton.length; i++){
         }
  
     //calling price function
-    priceTotal(newValue);
+    priceTotal(newValue, buttonClicked);
 })}
 
 
