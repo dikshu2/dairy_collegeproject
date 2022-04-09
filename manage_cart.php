@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             {
                 echo"<script>
                   alert('Item Already Added');
-                  window.location.href='vegetable.php';
+                  window.location.href='cart.php';
                 </script>";
             }
             else
@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             print_r($_SESSION['cart']);
             echo"<script>
                   alert('Item  Added');
-                  window.location.href='vegetable.php';
+                  window.location.href='cart.php';
                 </script>";
             }
         }
@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             print_r($_SESSION['cart']);
             echo"<script>
                   alert('Item  Added');
-                  window.location.href='vegetable.php';
+                  window.location.href='cart.php';
                 </script>";
         }
     }
