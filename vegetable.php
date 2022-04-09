@@ -90,7 +90,7 @@ include 'header.php';
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/broccoli.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/broccoli.png" class=""height="220px" alt="" srcset="">
                 </div>
             </div>
             <h6>Broccoli</h6>
@@ -112,7 +112,7 @@ include 'header.php';
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/lemon.jpg" class=""height="220px" alt="" srcset="">
+                    <img src="image/lemon.png" class=""height="220px" alt="" srcset="">
                 </div>
             </div>
             <h6>lemon</h6>

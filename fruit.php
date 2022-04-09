@@ -20,20 +20,20 @@ include 'header.php'
                     <img src="image/pomegranate.png" class="" height="220px"alt="" srcset="">
                 </div>
             </div>
-            <h6>pomegranate</h6>
+            <h6>Pomegranate</h6>
             <p>Rs60 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
 
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/strawberry.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/strawberry.jpg" class="" height="220px" alt="" srcset="">
                 </div>
             </div>
             <h6>Strawberry</h6>
             <p>Rs70 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
 
             <div class="col-lg-3 py-3  text-center">
@@ -42,64 +42,64 @@ include 'header.php'
                     <img src="image/apple.jpg" class="img-fluid" alt=""   srcset="">
                 </div>
             </div>
-            <h6>apple</h6>
+            <h6>Apple</h6>
             <p>Rs60 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
 
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/red_cabbage.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/mango.png" class="" height="215px" alt="" srcset="">
                 </div>
             </div>
-            <h6>Red Cabbage</h6>
+            <h6>Mango </h6>
             <p>Rs50 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
             
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/kiwi.jpg" class="img-fluid"  alt="" srcset="">
+                    <img src="image/kiwi.png" class=""height="220px"  alt="" srcset="">
                 </div>
             </div>
-            <h6>kiwi</h6>
+            <h6>Kiwi</h6>
             <p>Rs90 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
 
             <div class="col-lg-3  py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/product-6.jpg" class="img-fluid" alt="" srcset="">
+                    <img src="image/guava.png" class=""height="220px" alt="" srcset="">
                 </div>
             </div>
-            <h6>Broccoli</h6>
+            <h6>Guava</h6>
             <p>Rs80 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
 
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/orange.png" class="img-fluid" alt="" srcset="">
+                    <img src="image/orange.png" class=""height="220px" alt="" srcset="">
                 </div>
             </div>
-            <h6>Carrot</h6>
+            <h6>Orange</h6>
             <p>Rs40 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
 
             <div class="col-lg-3 py-3 text-center">
             <div class="card border-2 bg-light mb-2">
                 <div class="card-body">
-                    <img src="image/black grapes.png" class="img-fluid" alt="" srcset="">
+                    <img src="image/black-grapes.png" class=""height="220px" alt="" srcset="">
                 </div>
             </div>
-            <h6>Onion</h6>
+            <h6>Black Grapes</h6>
             <p>Rs70 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
+            <button type="submit"class="btn4">Add to cart</button>
             </div>
             
         </div>

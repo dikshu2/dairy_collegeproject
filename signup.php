@@ -24,6 +24,7 @@
   </head>
   <body style="background-image: url('image/bk4.jpg');">
 
+
   <?php
 include 'header.php'
 ?>
@@ -52,33 +53,32 @@ include 'header.php'
 
 
 
-              <form method="POST" action="database/signup.php" onsubmit=" return validateForm()">
+              <form method="POST" action="database/signup.php " onsubmit=" return validateForm()">
 
               <form action="database/signup.php" method="post">
 
               <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">Full Name</label>
                   <input type="text" id=""  name="fullname" class="form-control form-control-lg" autocomplete="off" required>
-                  <span id="error" style="color:red"> </span>
-                  <div class="invalid-feedback">
-                     Please provide a full name.
-                  </div>
-                  
+                  <span class="error" style="color: #FF0000;"><?php echo $nameErr?></span>
               </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example3cg" >Your Email</label>
                   <input type="email" id="" name="email" class="form-control form-control-lg" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-                 </div>
+                  <span class="error"></span> 
+                </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example3cg" >Address</label>
                   <input type="text" id="" name="address" class="form-control form-control-lg" autocomplete="off" required/>
+                  <span class="error"></span> 
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example3cg" >Phone Number</label>
                   <input type="number" id="" name="number" class="form-control form-control-lg"  pattern="/^\+?([0-9]{2})\)?[-]?([0-9]{3})?[-]?([0-9]{3})?[-]?([0-9]{4})$/" required/>
+                  <span class="error"></span>                 
                 </div>
 
                 <div class="form-outline mb-4">
@@ -97,13 +97,14 @@ include 'header.php'
                           }
                         }
                       </script>
-
+                      <span class="error"></span> 
                 </div>
 
                 <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example4cdg" >Confirm password</label>  
                 <input type="password" id="" name="pass2" class="form-control form-control-lg" required/>   
-                </div>
+                <span class="error"></span> 
+              </div>
 
                 <div class="d-flex justify-content-center">
                   <button type="sumbit" name ="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>

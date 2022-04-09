@@ -92,13 +92,13 @@
     font-weight: 700;
 }
 
-/* .main{
+.main{
    background-image:  url('image/bk3.jpg');
     background-size: cover;
     height: 100vh;
     background-position: 50% 50%;
     width: 100%;
-} */
+}
 
 .main h1{
     font-size: 4rem;
@@ -192,4 +192,7 @@
        text-decoration: none;
        color: white;
        margin: -34px;
+   }
+   .contain text{
+       
    }

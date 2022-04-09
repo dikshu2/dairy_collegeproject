@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--slider -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="Css_F/css/bootstrap.min.css">
@@ -43,8 +43,8 @@
             <li><img src="image/broccoli.jpg" height="600px" width="100%" alt=""></li>
           </ul>
         </section>
-      </div> -->
-      
+      </div>
+       -->
 <section class="main">
   <div class="container py-5">
     <div class="row py-5">
@@ -70,13 +70,17 @@
     </div>
   </div>
 </section>
-<section>
+<section class="content">
   <div class="container">
     <div class="row">
     <div class="col-sm">
       <img src="image/chilli.jpg" width="300px" alt="" srcset="">
     </div>
-  <div class="col-sm"><img src="image/tomato.jpg"width="300px" alt="" srcset=""></div>
+  <div class="col-sm text-center">
+				<h2 >Vegetables</h2>
+				<p>Protect the health of every home</p>
+				<p><a href="product.php" class="btn btn-primary">Shop now</a></p>
+	</div>
   <div class="col-sm"><img src="image/pineapple.jpg"width="300px"alt="" srcset=""></div>
   <div class="row">
     <div class="col-sm">
