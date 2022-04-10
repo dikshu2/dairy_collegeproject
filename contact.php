@@ -58,7 +58,7 @@
           <input type="text" placeholder="Enter your email">
         </div>
         <div class="input-box message-box">
-          
+          <textarea name="" class="" placeholder="Enter your message" cols="30" rows="10"></textarea>
         </div>
         <div class="button">
           <input type="button" value="Send Now" >

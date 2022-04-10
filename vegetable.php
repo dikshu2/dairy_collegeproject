@@ -11,7 +11,6 @@
     <title>Vegetables</title>
 </head>
 <body>
-
 <?php
 include 'header.php';
 ?>
@@ -25,12 +24,12 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Pea</h6>
-                <p>Rs.<span class="price">60</span></p>
-                <div class="quantity">
+                <p>Rs. 60 per kg</p>
+                <!-- <div class="quantity">
                     <button class="button minus-btn" type="button">-</button>
                     <input type="text" id="1" value="1">
                     <button class="button plus-btn" type="button">+</button>
-                </div>
+                </div> -->
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Pea">
                 <input type="hidden" name="Price" value="60">
@@ -45,12 +44,12 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Onion</h6>
-                <p>Rs.<span class="price">70</span></p>
-                <div class="quantity">
+                <p>Rs. 70 per kg</p>
+                <!-- <div class="quantity">
                     <button class="button minus-btn" type="button">-</button>
                     <input type="text" id="2" value="1">
                     <button class="button plus-btn" type="button">+</button>
-                </div>
+                </div> -->
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Onion">
                 <input type="hidden" name="Price" value="70">
@@ -65,12 +64,12 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Capsicum</h6>
-                <p>Rs.<span id="price">60</span></p>
-                <div class="quantity">
+                <p>Rs. 60 per kg</p>
+                <!-- <div class="quantity">
                     <button class="button minus-btn" type="button">-</button>
                     <input type="text" id="price" value="1">
                     <button class="button plus-btn" type="button">+</button>
-                </div>
+                </div> -->
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Capsicum">
                 <input type="hidden" name="Price" value="60">
@@ -85,7 +84,7 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Carrot</h6>
-                <p>Rs60 per kg</p>
+                <p>Rs. 60 per kg</p>
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Carrot">
                 <input type="hidden" name="Price" value="60">
@@ -100,7 +99,7 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Tomato</h6>
-                <p>Rs90 per kg</p>
+                <p>Rs. 90 per kg</p>
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Tomato">
                 <input type="hidden" name="Price" value="90">
@@ -115,7 +114,7 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Broccoli</h6>
-                <p>Rs80 per kg</p>
+                <p>Rs. 80 per kg</p>
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Broccoli">
                 <input type="hidden" name="Price" value="80">
@@ -130,7 +129,7 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Potato</h6>
-                <p>Rs40 per kg</p>
+                <p>Rs. 40 per kg</p>
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Potato">
                 <input type="hidden" name="Price" value="40">
@@ -145,7 +144,7 @@ include 'header.php';
                     </div>
                 </div>
                 <h6>Lemon</h6>
-                <p>Rs50 per kg</p>
+                <p>Rs. 50 per kg</p>
                 <button type="submit" name="Add_To_Cart" class="btn4">add to cart</button>
                 <input type="hidden" name="Item_Name" value="Lemon">
                 <input type="hidden" name="Price" value="50">
