@@ -1,8 +1,7 @@
 <?php
+include 'header.php'
+?><!doctype html>
 
-?>
-
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -20,14 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="signup.css"> -->
 <script src="https://kit.fontawesome.com/62f5df6ae3.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
     <title>online vegetable store</title>
   </head>
   <body style="background-image: url('image/bk4.jpg');">
-
-
-  <?php
-include 'header.php'
-?>
 
 <!-- form -->
 <section class="vh-100 bg-image" >
@@ -53,25 +51,25 @@ include 'header.php'
 
 
 
-              <form method="POST" action="database/signup.php " onsubmit=" return validateForm()">
+              <!-- <form method="POST" action="database/signup.php " onsubmit=" return validateForm()"> -->
 
-              <form action="database/signup.php" method="post">
-
+              <form action="database/signup.php" method="post" id="formValidation">
               <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">Full Name</label>
-                  <input type="text" id=""  name="fullname" class="form-control form-control-lg" autocomplete="off" required>
-                  <span class="error" style="color: #FF0000;"><?php echo $nameErr?></span>
+                  <input type="text" id="form3Example1cg" name="fullname" class="form-control form-control-lg" autocomplete="off" required>
+                  <span class="error" style="color: #FF0000;">
+                  </span> 
               </div>
 
                 <div class="form-outline mb-4">
-                  <label class="form-label" for="form3Example3cg" >Your Email</label>
-                  <input type="email" id="" name="email" class="form-control form-control-lg" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                  <label class="form-label" for="form3Ex2mple2cg" >Your Email</label>
+                  <input type="email" id="form3Ex2mple2cg" name="email" class="form-control form-control-lg" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
                   <span class="error"></span> 
                 </div>
 
                 <div class="form-outline mb-4">
-                  <label class="form-label" for="form3Example3cg" >Address</label>
-                  <input type="text" id="" name="address" class="form-control form-control-lg" autocomplete="off" required/>
+                  <label class="form-label" for="form3Example4cg" >Address</label>
+                  <input type="text" id="form3Example4cg" name="address" class="form-control form-control-lg" autocomplete="off" required/>
                   <span class="error"></span> 
                 </div>
 
@@ -101,8 +99,8 @@ include 'header.php'
                 </div>
 
                 <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example4cdg" >Confirm password</label>  
-                <input type="password" id="" name="pass2" class="form-control form-control-lg" required/>   
+                <label class="form-label" for="form3Example5cdg" >Confirm password</label>  
+                <input type="password" id="form3Example5cdg" name="pass2" class="form-control form-control-lg" required/>   
                 <span class="error"></span> 
               </div>
 
@@ -112,7 +110,6 @@ include 'header.php'
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php" class="fw-bold text-body"><u>Login here</u></a></p>
               </form>
-
             
             </div>
           </div>
@@ -126,5 +123,12 @@ include 'header.php'
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
 
+   <script>
+
+$(()=>{
+  $("#formValidation").validate
+})
+
+     </script>
 
 </html>
