@@ -80,7 +80,14 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
+              <?php
+                $count=0;
+                if(isset($_SESSION['cart']))
+                {
+                  $count=count($_SESSION['cart']);
+                }
+              ?>
+              <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x">(<?php echo $count; ?>)</i></a>
             </li>
           </ul>
       
