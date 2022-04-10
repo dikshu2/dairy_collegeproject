@@ -20,6 +20,10 @@
 <link rel="stylesheet" href="about.css">
     <title>about</title>
     
+     <!--slider -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   
   </head>
   <body>
@@ -44,13 +48,24 @@ include 'header.php'
      <div class="title">
         <h2 class="head">ABOUT US</h2>
      </div>
-     <div class="content">
+     <!-- <div class="content">
        <div class="image-section">
              <img src="image/bk5.jpg" alt="" srcset="" >
-          </div>
+          </div> -->
+
+           <div id="slide-wrap">
+        <section class="image-section">
+          <ul class="slider1">
+            <li><img src="image/bk6.jpg" height="350px" width="100%" alt=""></li>
+            <li><img src="image/bk5.jpg" height="350px" width="100%" alt=""></li>
+            <li><img src="image/bk3.jpg" height="350px" width="100%" alt=""></li>
+          </ul>
+        </section>
+      <br>
+    
      
        <div class="article">
-          <p>  We are online vegetable & fruits store. We deliver fresh vegetables and fruits.<br> 
+          <p> We are online vegetable & fruits store. We deliver fresh vegetables and fruits.<br> 
               You can buy our produt, add to cart fill your address for delivery. We aim to<br> 
               change the traditionally way of buying vegetables and fruits.
           </p>
@@ -80,5 +95,20 @@ include 'footer.php'
 </div>
 
   </body>
+
+  <!-- SCRIPTS -->
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider2').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider3').bxSlider({
+        mode: 'fade',
+      });
+    });
+  </script>
 </html>
 

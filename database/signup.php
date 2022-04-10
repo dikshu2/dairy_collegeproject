@@ -8,24 +8,7 @@
   $pass2 = $_POST['pass2'];
 
   include('connect.php');
-
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nameErr="";$name="";
-    if (empty($_POST["fullname"])) {
-      $nameErr = "Name is required";
-    } else {
-      $fullname = test_input($_POST["fullname"]);
-    }
-    
-  }
   
-  function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-  }
-
   //email unique
     if($email != null && $email != "") 
     {

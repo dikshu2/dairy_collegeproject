@@ -23,7 +23,12 @@
   <!-- header -->
 <div class="bc">
   <nav class="navbar navbar-expand-lg ">
+  <input type="checkbox" name="" id="check" class="checkbtn">
+      <label for="check">
+        <i class="fas fa-bars" ></i>
+      </label>
     <!-- <div class="container"> -->
+      
       <a class="navbar-brand" href="index.php">Vege</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,7 +58,7 @@
 
             <li class="nav-item dropdown">
                 <?php
-                  session_start();
+                   session_start();
                   if(isset($_SESSION['name'])){
                     ?>
                     <a class="nav-link">

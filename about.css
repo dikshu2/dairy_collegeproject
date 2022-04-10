@@ -27,10 +27,15 @@
     display: block;
     margin:auto;
 }
-.content{
+/* .content{
+    /* float:left; 
+    width: 100%; 
+}*/
+.slider{
     /* float:left; */
     width: 100%;
 }
+
 .article{
     width: 50%;
     /* background-color: #88941e; */
@@ -43,6 +48,7 @@
 } 
 .image-section img{
     width: 100%;
+    height: auto;
     /* float: right; */
     /* padding-top: 30PX; */
 }   
