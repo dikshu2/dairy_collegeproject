@@ -35,12 +35,12 @@
       <div class="col-lg-11 py-4">
         <div class="row">
           <div class="col-lg-3">
-            <h5 class="pb-3">Vege</h5>
+            <h5 class="pb-2">Vege</h5>
             <p>Nature Has Always Cared For Us!</p>
           </div>
           
           <div class="col-lg-3">
-            <h5 class="pb-3">Menu</h5>
+            <h5 class="pb-2">Menu</h5>
             <div >
               <ul class="anchortag">
               <li><a href="index.php" >Home</a></li>
@@ -51,14 +51,17 @@
           </div>
 
           <div class="col-lg-3">
-            <h5 class="pb-3" >CUSTOMER CARE</h5>
+            <h5 class="pb-2" >CUSTOMER CARE</h5>
             <p>Regular</p>
             <p>On Time</p>
             <p>Always Care</p>
           </div>
           <div class="col-lg-3">
-            <h5 class="pb-3">Contact Us</h5>
-            <h5 class="pb-3">Follow us</h5>
+            <h5 class="pb-2">Contact Us</h5>
+            <p>9808755652</p>
+            <p>vege@gmail.com</p>
+            <br>
+            <h5 class="pb-2">Follow us</h5>
             <span><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a></span>
             <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a></span>
             <span><a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2x"></i></a></span>

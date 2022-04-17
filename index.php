@@ -43,7 +43,7 @@
   </div>
 </section>
 
-<section class="services py-5 bg-light">
+<!-- <section class="services py-5 bg-light">
   <div class="container py-5">
     <h1 class="text-center pb-5">Services</h1>
     <div class="rowpb-3">
@@ -56,7 +56,8 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+<br>
 <section class="content">
   <div class="container">
     <div class="row">
@@ -68,13 +69,13 @@
 				<p>Protect the health of every home</p>
 				<p><a href="product.php" class="btn btn-primary">Shop now</a></p>
 	</div>
-  <div class="col-sm"><img src="image/banana.png"width="300px"alt="" srcset=""></div>
+  <div class="col-sm"><img src="image/banana.png"width="280px"alt="" srcset=""></div>
   <div class="row">
     <div class="col-sm">
-      <img src="image/broccoli.png" width="300px" alt="" srcset="">
+      <img src="image/broccoli.png" width="280px" alt="" srcset="">
     </div>
-  <div class="col-sm"><img src="image/bg_3.jpg"width="315px" alt="" srcset=""></div>
-  <div class="col-sm"><img src="image/pineapple.jpg"width="300px"alt="" srcset=""></div>
+  <div class="col-sm"><img src="image/guava.png"width="315px" alt="" srcset=""></div>
+  <div class="col-sm"><img src="image/pineapple.png"width="280px"alt="" srcset=""></div>
   </div>
 </section>
 <?php
