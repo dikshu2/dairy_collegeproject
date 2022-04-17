@@ -48,12 +48,12 @@
     <h1 class="text-center pb-5">Services</h1>
     <div class="rowpb-3">
       <div class="col-lg-4 mb-3"></div>
-      <div class="card">
+      <!-- <div class="card">
         <div class="circle">
           <span><a href="#" ><i class="fas fa-motorcycle fa-3x"></i></a></span>
         </div>
         <h4 class="font-weight-bold pb-2"> delivery</h4>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -71,7 +71,7 @@
   <div class="col-sm"><img src="image/banana.png"width="300px"alt="" srcset=""></div>
   <div class="row">
     <div class="col-sm">
-      <img src="image/broccoli.png" width="300px" alt="" srcset="">
+      <img src="image/broccoli.png" width="250px" alt="" srcset="">
     </div>
   <div class="col-sm"><img src="image/bg_3.jpg"width="315px" alt="" srcset=""></div>
   <div class="col-sm"><img src="image/pineapple.jpg"width="300px"alt="" srcset=""></div>

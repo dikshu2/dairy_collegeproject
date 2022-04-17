@@ -23,10 +23,10 @@
   <!-- header -->
 <div class="bc">
   <nav class="navbar navbar-expand-lg ">
-  <input type="checkbox" name="" id="check" class="checkbtn">
+  <!-- <input type="checkbox" name="" id="check" class="checkbtn">
       <label for="check">
         <i class="fas fa-bars" ></i>
-      </label>
+      </label> -->
     <!-- <div class="container"> -->
       
       <a class="navbar-brand" href="index.php">Vege</a>

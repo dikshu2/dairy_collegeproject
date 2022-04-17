@@ -25,6 +25,7 @@
    <?php
   include 'header.php'
   ?>
+  <br>
    <div class="container">
    <div class="content">
       <div class="left-side">
@@ -67,6 +68,8 @@
     </div>
     </div>
   </div> 
+  <br>
+  
   <?php
   include 'footer.php'
   ?>

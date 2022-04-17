@@ -49,6 +49,7 @@ include 'header.php'
             <?php  }
            ?>
 
+           
 
 
               <!-- <form method="POST" action="database/signup.php " onsubmit=" return validateForm()"> -->
@@ -57,14 +58,13 @@ include 'header.php'
               <div class="form-outline mb-4">
                   <label class="form-label" for="form3Example1cg">Full Name</label>
                   <input type="text" id="form3Example1cg" name="fullname" class="form-control form-control-lg" autocomplete="off" required>
-                  <span class="error" style="color: #FF0000;">
-                  </span> 
+                  <span class="error"></span> 
               </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" for="form3Ex2mple2cg" >Your Email</label>
                   <input type="email" id="form3Ex2mple2cg" name="email" class="form-control form-control-lg" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-                  <span class="error"></span> 
+                  <span class="error"><?php if (isset($emailError)) echo $emailError; ?></span> 
                 </div>
 
                 <div class="form-outline mb-4">
