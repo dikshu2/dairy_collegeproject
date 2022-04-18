@@ -45,81 +45,93 @@ include 'header.php'
         </div>
 
         <div class="col-lg-3 py-3  text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/apple.png" class="" height="220px" alt="" srcset="">
+            <form action="manage_cart.php" method="POST">
+                <div class="card border-2 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="image/apple.png" class="" height="220px" alt="" srcset="">
+                    </div>
                 </div>
-            </div>
-            <h6>Apple</h6>
-            <p>Rs. 60 per kg</p>
-            <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
-            <input type="hidden" name="Item_Name" value="Apple">
-            <input type="hidden" name="Price" value="60">
+                <h6>Apple</h6>
+                <p>Rs. 60 per kg</p>
+                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <input type="hidden" name="Item_Name" value="Apple">
+                <input type="hidden" name="Price" value="60">
+            </form>
         </div>
 
         <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/mango.png" class="" height="220px" alt="" srcset="">
+            <form action="manage_cart.php" method="POST">
+                <div class="card border-2 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="image/mango.png" class="" height="220px" alt="" srcset="">
+                    </div>
                 </div>
-            </div>
-            <h6>Mango </h6>
-            <p>Rs. 50 per kg</p>
-            <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
-            <input type="hidden" name="Item_Name" value="Mango">
-            <input type="hidden" name="Price" value="50">
+                <h6>Mango </h6>
+                <p>Rs. 50 per kg</p>
+                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <input type="hidden" name="Item_Name" value="Mango">
+                <input type="hidden" name="Price" value="50">
+            </form>
         </div>
             
         <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/kiwi.png" class=""height="220px"  alt="" srcset="">
+            <form action="manage_cart.php" method="POST">
+                <div class="card border-2 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="image/kiwi.png" class=""height="220px"  alt="" srcset="">
+                    </div>
                 </div>
-            </div>
-            <h6>Kiwi</h6>
-            <p>Rs. 90 per kg</p>
-            <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
-            <input type="hidden" name="Item_Name" value="Kiwi">
-            <input type="hidden" name="Price" value="90">
+                <h6>Kiwi</h6>
+                <p>Rs. 90 per kg</p>
+                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <input type="hidden" name="Item_Name" value="Kiwi">
+                <input type="hidden" name="Price" value="90">
+            </form>
         </div>
 
         <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/guava.png" class=""height="220px" alt="" srcset="">
+            <form action="manage_cart.php" method="POST">
+                <div class="card border-2 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="image/guava.png" class=""height="220px" alt="" srcset="">
+                    </div>
                 </div>
-            </div>
-            <h6>Guava</h6>
-            <p>Rs. 80 per kg</p>
-            <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
-            <input type="hidden" name="Item_Name" value="Guava">
-            <input type="hidden" name="Price" value="80">
+                <h6>Guava</h6>
+                <p>Rs. 80 per kg</p>
+                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <input type="hidden" name="Item_Name" value="Guava">
+                <input type="hidden" name="Price" value="80">
+            </form>
         </div>
 
         <div class="col-lg-3 py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/orange.png" class=""height="220px" alt="" srcset="">
+            <form action="manage_cart.php" method="POST">
+                <div class="card border-2 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="image/orange.png" class=""height="220px" alt="" srcset="">
+                    </div>
                 </div>
-            </div>
-            <h6>Orange</h6>
-            <p>Rs. 40 per kg</p>
-            <button type="submit"name="Add_To_Cart" class="btn4">Add to cart</button>
-            <input type="hidden" name="Item_Name" value="Orange">
-            <input type="hidden" name="Price" value="40">
+                <h6>Orange</h6>
+                <p>Rs. 40 per kg</p>
+                <button type="submit"name="Add_To_Cart" class="btn4">Add to cart</button>
+                <input type="hidden" name="Item_Name" value="Orange">
+                <input type="hidden" name="Price" value="40">
+            </form>
         </div>
 
         <div class="col-lg-3 py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/black-grapes.png" class=""height="220px" alt="" srcset="">
+            <form action="manage_cart.php" method="POST">
+                <div class="card border-2 bg-light mb-2">
+                    <div class="card-body">
+                        <img src="image/black-grapes.png" class=""height="220px" alt="" srcset="">
+                    </div>
                 </div>
-            </div>
-            <h6>Black Grapes</h6>
-            <p>Rs. 70 per kg</p>
-            <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
-            <input type="hidden" name="Item_Name" value="Black Grapes">
-            <input type="hidden" name="Price" value="70">
+                <h6>Black Grapes</h6>
+                <p>Rs. 70 per kg</p>
+                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <input type="hidden" name="Item_Name" value="Black Grapes">
+                <input type="hidden" name="Price" value="70">
+            </form>
         </div>
             
     </div>

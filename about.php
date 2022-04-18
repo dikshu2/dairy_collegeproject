@@ -56,7 +56,7 @@ include 'header.php'
            <div id="slide-wrap">
         <section class="image-section">
           <ul class="slider1">
-            <li><img src="image/bk6.jpg" height="350px" width="100%" alt=""></li>
+            <li><img src="image/bk6.jpg" height="300px" width="100%" alt=""></li>
             <li><img src="image/bk5.jpg" height="350px" width="100%" alt=""></li>
             <li><img src="image/bk3.jpg" height="350px" width="100%" alt=""></li>
           </ul>
@@ -89,7 +89,10 @@ include 'header.php'
  </div>
 <div>
 <br>
+<<<<<<< HEAD
 <br>
+=======
+>>>>>>> 39796f3ec9c5a26a1a81e1f20f3fd0aada248f1e
 <?php
 include 'footer.php'
 ?>

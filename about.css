@@ -47,8 +47,10 @@
     float: right;
 } 
 .image-section img{
-    width: 100%;
-    height: auto;
+    width: 88%;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
     /* float: right; */
     /* padding-top: 30PX; */
 }   

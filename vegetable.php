@@ -161,6 +161,6 @@ include 'footer.php'
 ?>
     
 </body>
-<script src="product.js"></script>
+<!-- <script src="product.js"></script> -->
 </html>
 

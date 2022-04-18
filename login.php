@@ -33,22 +33,22 @@ include 'header.php'
 
               <form action ="database/check.php" method="post" >
 
-              <?php
+                <?php
 
-if(isset($_GET['errmsg'])){ ?>
-  <div class="alert alert-danger">
-      <?php echo $_GET['errmsg']; ?>
-  </div>
-<?php  }
-?>
-<?php
+                if(isset($_GET['errmsg'])){ ?>
+                  <div class="alert alert-danger">
+                      <?php echo $_GET['errmsg']; ?>
+                  </div>
+                <?php  }
+                ?>
+                <?php
 
-if(isset($_GET['msg'])){ ?>
-  <div class="alert alert-success">
-      <?php echo $_GET['msg']; ?>
-  </div>
-<?php  }
-?>
+                if(isset($_GET['msg'])){ ?>
+                  <div class="alert alert-success">
+                      <?php echo $_GET['msg']; ?>
+                  </div>
+                <?php  }
+                ?>
 
                 <div class="form-outline mb-4">
                   <label class="form-label" autocomplete="off" for="form3Example3cg">Your Email</label>
