@@ -39,9 +39,9 @@
                   <td>$value[Item_Name]</td>
                   <td>$value[Price]<input type='hidden' class='iprice' value='$value[Price]'></td>
                   <td>
-                    <form action='manage_cart.php' method='POST'>
+                    <form action='manage_cart.php' method='POST'> 
                       <input class='text-center iquantity' name='Mod_Quantity' onchange='subTotal();' type='number' value='$value[Quantity]' min='1' max='10'
-                      <input type='hidden' name='Item_Name' value='$value[Item_Name]'>
+                      <input type='hidden' name ='Item_Name' value='$value[Item_Name]'>
                     </form>
                   </td>
                   <td class='itotal'></td>

@@ -23,7 +23,7 @@ include 'header.php'
                 </div>
                 <h6>Pomegranate</h6>
                 <p>Rs. 60 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Pomegranate">
                 <input type="hidden" name="Price" value="60">
             </form>
@@ -38,7 +38,7 @@ include 'header.php'
                 </div>
                 <h6>Strawberry</h6>
                 <p>Rs. 70 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Strawberry">
                 <input type="hidden" name="Price" value="70">
             </form>
@@ -53,7 +53,7 @@ include 'header.php'
                 </div>
                 <h6>Apple</h6>
                 <p>Rs. 60 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Apple">
                 <input type="hidden" name="Price" value="60">
             </form>
@@ -68,7 +68,7 @@ include 'header.php'
                 </div>
                 <h6>Mango </h6>
                 <p>Rs. 50 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Mango">
                 <input type="hidden" name="Price" value="50">
             </form>
@@ -83,7 +83,7 @@ include 'header.php'
                 </div>
                 <h6>Kiwi</h6>
                 <p>Rs. 90 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Kiwi">
                 <input type="hidden" name="Price" value="90">
             </form>
@@ -98,7 +98,7 @@ include 'header.php'
                 </div>
                 <h6>Guava</h6>
                 <p>Rs. 80 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Guava">
                 <input type="hidden" name="Price" value="80">
             </form>
@@ -113,7 +113,7 @@ include 'header.php'
                 </div>
                 <h6>Orange</h6>
                 <p>Rs. 40 per kg</p>
-                <button type="submit"name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit"name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Orange">
                 <input type="hidden" name="Price" value="40">
             </form>
@@ -128,7 +128,7 @@ include 'header.php'
                 </div>
                 <h6>Black Grapes</h6>
                 <p>Rs. 70 per kg</p>
-                <button type="submit" name="Add_To_Cart" class="btn4">Add to cart</button>
+                <button type="submit" name="Add_To_Cart" class="btn4">ADD TO CART</button>
                 <input type="hidden" name="Item_Name" value="Black Grapes">
                 <input type="hidden" name="Price" value="70">
             </form>

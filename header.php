@@ -22,11 +22,15 @@
 
   <!-- header -->
 <div class="bc">
+<<<<<<< HEAD
   <nav class="navbar navbar-expand-lg ">
   <!-- <input type="checkbox" name="" id="check" class="checkbtn">
       <label for="check">
         <i class="fas fa-bars" ></i>
       </label> -->
+=======
+  <nav class="navbar navbar-expand-lg">
+>>>>>>> 99cc44124b56d8ceb34dc5a8f44fa346fee732a5
     <!-- <div class="container"> -->
       
       <a class="navbar-brand" href="index.php">Vege</a>
