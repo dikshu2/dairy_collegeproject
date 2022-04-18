@@ -72,11 +72,7 @@
   <div class="col-sm"><img src="image/banana.png"width="280px"alt="" srcset=""></div>
   <div class="row">
     <div class="col-sm">
-<<<<<<< HEAD
-      <img src="image/broccoli.png" width="250px" alt="" srcset="">
-=======
       <img src="image/broccoli.png" width="280px" alt="" srcset="">
->>>>>>> 99cc44124b56d8ceb34dc5a8f44fa346fee732a5
     </div>
   <div class="col-sm"><img src="image/guava.png"width="315px" alt="" srcset=""></div>
   <div class="col-sm"><img src="image/pineapple.png"width="280px"alt="" srcset=""></div>

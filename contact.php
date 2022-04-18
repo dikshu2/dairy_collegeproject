@@ -69,10 +69,6 @@
     </div>
   </div> 
   <br>
-<<<<<<< HEAD
-  
-=======
->>>>>>> 39796f3ec9c5a26a1a81e1f20f3fd0aada248f1e
   <?php
   include 'footer.php'
   ?>
