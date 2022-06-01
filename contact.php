@@ -1,76 +1,147 @@
-<!doctype html>
+<?php
+
+include('header.php');
+?>
+
+   
+     <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+     
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+     
 
-<!-- google font link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
-<!-- font awesome link -->
 
-<!-- css link -->
-<link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
 
-<script src="https://kit.fontawesome.com/62f5df6ae3.js" crossorigin="anonymous"></script>
-    <title>contact us</title>
-  </head>
-   <body>
-   <?php
-  include 'header.php'
-  ?>
-  <br>
-   <div class="container">
-   <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Gwarko, Lalitpur</div>
-          <div class="text-two">Nepal</div>
-        </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">9808755652</div>
-          <div class="text-two">9841445545</div>
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">vege@gmail.com</div>
-          <div class="text-two">info.vege@gmail.com</div>
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
-          <textarea name="" class="" placeholder="Enter your message" cols="30" rows="10"></textarea>
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
-    </div>
-  </div> 
-  <br>
-  <?php
-  include 'footer.php'
-  ?>
+<body>
+
+  
 </body>
+<section class="Contact py-5 ">
+    <div class="container text -white py-5 ">
+        <div class="row py-5 ">
+            <div class="col-lg-8 m-auto text-center ">
+                <h1> Contact Us </h1>
+                <h6 style="color: rgb(189, 27, 27); "> Always Be In Touch With Us</h6>
+
+            </div>
+        </div>
+        <div class="row " py-5>
+            <div class="col-lg-9 m-auto ">
+                <div class="row ">
+                    <div class="col-lg-4 ">
+                        <h6>LOCATION</h6>
+                        <P>Balkumari-4 Lalitpur</P>
+
+                        <h6>PHONE</h6>
+                        <P> 9861578543</P>
+
+
+                        <h6>EMAIL</h6>
+                        <P> hamrodiary123@gmail.com</P>
+                    </div>
+
+                    
+
+                    <div class="col-lg-7 ">
+                    <form action="contactjs.php" method="post">
+                        <div class="row ">
+                            <div class="col-lg-6 ">
+                                <input type="text " name="fname" class="form-control bg-light " placeholder="First Name ">
+                            </div>
+                            <div class="col-lg-6 ">
+                                <input type="text " name="lname" class="form-control bg-light " placeholder="Last Name ">
+                            </div><br><br>
+                            <div class="col-lg-6 ">
+                                <input type="text " name="email" class="form-control bg-light " placeholder="Enter Your Email ">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-12 py-3 ">
+                                <textarea class="form-control bg-light" name="message" placeholder="Enter Your Message " id=" " cols="10 " rows="5 "></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn1">Submit</button>
+                    </div>
+                    </form>
+
+                    <?php
+
+                        if(isset($_GET['errmsg'])){ ?>
+                        <div class="alert alert-success">
+                            <?php echo $_GET['errmsg']; ?>
+                        </div>
+                        <?php  }
+                        ?>
+
+                </div>
+               
+            </div>
+        </div>
+</section>
+</form>
+<section class="news ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-9 ">
+                    <h1>Join Our Secret Society</h1>
+                    <!-- <input type="text " class="px-3 " placeholder="Enter Your Email ">
+                    <button class="btn2 ">Submit</button> -->
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-11 ">
+                    <div class="row ">
+                        <div class="col-lg-3 ">
+                            <h5 class="pb-3 ">CUSTOMER CARE</h5>
+                            <p>Regular</p>
+                            <p>On Time</p>
+                            <p>Always</p>
+                        </div>
+                        <div class="col-lg-3 ">
+                            <h5 class="pb-3 "> Our policies</h5>
+                            <p>Buyer Protection Policy</p>
+                            <p>Shipping & Delivery Policy</p>
+                            <p>Cancellation Policy</p>
+                            <p>Refund Policy</p>
+                        </div>
+                        <div class="col-lg-3 ">
+                            <h5 class="pb-3 ">Express Delivery <i class="fa fa-truck" aria-hidden="true"></i></h5>
+                            <p>Delivery your desired product at your doorstep on time</p>
+
+                        </div>
+                        <div class="col-lg-3 ">
+                            <h5 class="pb-3 ">Quality Checked</h5>
+                            <p>We are providing top quelity genuine product and service. </p>
+
+                        </div>
+                        <div class="col-lg-3 ">
+                            <h5 class="pb-3 "> CUSTOMER CARE </h5>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center ">Copyright 2022 All rights reserved . </p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+
+</body>
+
 </html>

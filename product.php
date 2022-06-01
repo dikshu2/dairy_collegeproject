@@ -1,218 +1,156 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <?php
+include 'header.php';
+?>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product</title>
+ </head>
+ <body>
+ 
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- css link -->
-    <link rel="stylesheet" href="style.css">
-<!-- google font link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
-<!-- font awesome link -->
-<script src="https://kit.fontawesome.com/62f5df6ae3.js" crossorigin="anonymous"></script>
-    <title>online vegetable store</title>
-  </head>
-  <body>
-
-<div class="bc">
-    <nav class="navbar navbar-expand-lg ">
-  <div class="container">
-    <a class="navbar-brand" href="index.php">Vege</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active"  href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">product</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link " href="about.php" >about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="login.php">login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="cart.php"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
-        </li>
-      </ul>
-      
-      <form class="d-flex">
-        <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn0" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-</div>
-
-<section class="main">
-  <div class="container py-5">
-    <div class="row py-5">
-      <div class="col-lg-7 ">
-          <h1 class="pt-5">Nature Has Always Cared For Us!</h1>
-           <button class="btn1 mt-3">Explore</button>
-        </div>
-      </div>
-  </div>
-  
-</section>
-
-<section class="product">
-        <div class="row py-3">
-            <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-3.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Pea</h6>
-            <p>Rs60 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-
-            <div class="col-lg-3 py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-2.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Strawberry</h6>
-            <p>Rs70 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-
-            <div class="col-lg-3 py-3  text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-1.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Capsicum</h6>
-            <p>Rs60 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-
-            <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-4.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Purple Cabbage</h6>
-            <p>Rs50 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-            
-            <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-5.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Tomato</h6>
-            <p>Rs90 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-
-            <div class="col-lg-3  py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-6.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Broccoli</h6>
-            <p>Rs80 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-
-            <div class="col-lg-3 py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-7.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Carrot</h6>
-            <p>Rs40 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-
-            <div class="col-lg-3 py-3 text-center">
-            <div class="card border-2 bg-light mb-2">
-                <div class="card-body">
-                    <img src="image/product-9.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-            </div>
-            <h6>Onion</h6>
-            <p>Rs70 per kg</p>
-            <button type="submit"class="btn4">add to cart</button>
-            </div>
-            
-        </div>
-        
-    </section>
-
-
-
-<section class="news py-6">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-lg-9 m-auto text-center">
-        <h1>stay with us</h1>
-        <input type="text" name="" class="px-4" placeholder="Enter your email" id="">
-        <button class="btn2 ">submit</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-11 py-4">
-        <div class="row">
-          <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
-          </div>
-          
-          <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
-          </div>
-
-          <div class="col-lg-3">
-            <h5 class="pb-3" >CUSTOMER CARE</h5>
-            <p>Regular</p>
-            <p>On Time</p>
-            <p>Always Care</p>
-          </div>
-          <div class="col-lg-3">
-            <h5 class="pb-3">CUSTOMER CARE</h5>
-            <span><i class="fa-brands fa-facebook fa-2x"></i></span>
-            <span><i class="fa-brands fa-instagram fa-2x"></i></span>
-            <span><i class="fa-brands fa-twitter fa-2x"></i></span>
-            
-          </div>
-        
-      </div>
+    <div class="featured-product" id="pricing">
+        <h1 style="color: red;">Available Product </h1>
     </div>
     <div>
-    <hr>
-    <p>copyright@2022</p>
+        <h2 style="color: rgb(143, 171, 212);">Category </h2>
     </div>
-  </div>
-</section>
-  </body>
-</html>
+
+
+
+    <div class="featured-products">
+
+        <div class="product-wrap butter">
+
+            <div class="product-img">
+                <img src="Newimage/butter.jpg" alt="Butter_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh Butter</p> <br><br>
+                <a href="butter.php">See more <span ></span></a>
+            </div>
+        </div>
+        <div class="product-wrap cake">
+
+            <div class="product-img">
+                <img src="Newimage/cake.jpg" alt="cake_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh Cake</p> <br><br>
+                <a href="cake.html">See more <span ></span></a>
+            </div>
+        </div>
+        <div class="product-wrap chocolate">
+
+            <div class="product-img">
+                <img src="Newimage/chocolate.jpg" alt="chocolate_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Yum Chocolate</p> <br><br>
+                <a href="chocolate.html">See more <span ></span></a>
+            </div>
+        </div>
+
+        <div class="product-wrap cheese">
+
+            <div class="product-img">
+                <img src="Newimage/cheese.jpg" alt="Cheese_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh Cheese</p> <br><br>
+                <a href="cheese.html">See more <span ></span></a>
+            </div>
+        </div>
+        <div class="product-wrap paneer">
+
+            <div class="product-img">
+                <img src="Newimage/Panner.jpg" alt="paneer_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh paneer</p> <br><br>
+                <a href="paneer.html">See more <span ></span></a>
+            </div>
+        </div>
+        <div class="product-wrap dahi">
+
+            <div class="product-img">
+                <img src="Newimage/dahi.jpg" alt="dahi_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh dahi</p> <br><br>
+                <a href="curd.html">See more <span ></span></a>
+            </div>
+        </div>
+        <div class="product-wrap ghee">
+
+            <div class="product-img">
+                <img src="Newimage/pure ghee.jpg" alt="Ghee_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh Ghee</p> <br><br>
+                <a href="ghee.html">See more <span ></span></a>
+            </div>
+        </div>
+        <div class="product-wrap icecream">
+
+            <div class="product-img">
+                <img src="Newimage/icecream.jpg" alt="icecream_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh icecream</p> <br><br>
+                <a href="icecream.html">See more <span ></span></a>
+
+            </div>
+        </div>
+
+        <div class="product-wrap bread">
+            <div class="product-img">
+                <img src="Newimage/brownbread.jpg" alt="bread_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh bread</p> <br><br>
+                <a href="bread.html">See more <span ></span></a>
+            </div>
+        </div>
+
+        <div class="product-wrap cream">
+            <div class="product-img">
+                <img src="Newimage/buffalo milk.jpg" alt="milk_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh milk</p> <br><br>
+                <a href="milk.php">See more <span ></span></a>
+            </div>
+        </div>
+
+        <div class="product-wrap jam">
+            <div class="product-img">
+                <img src="Newimage/jam.jpg" alt="jam_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Fresh Jam</p> <br><br>
+                <a href="jam.html">See more <span ></span></a>
+            </div>
+        </div>
+
+        <div class="product-wrap ghee">
+
+            <div class="product-img">
+                <img src="Newimage/5 star.jpg" alt="chocolate_img">
+            </div>
+            <div class="product-description">
+                <p class="product-name">Packet Product</p> <br><br>
+                <a href="packet.html">See more <span ></span></a>
+            </div>
+        </div>
+
+
+        </div>
+
+
+ </body>
+ </html>

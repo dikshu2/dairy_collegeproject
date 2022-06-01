@@ -1,114 +1,108 @@
-<!doctype html>
+<?php
+
+include('header.php');
+?>
+
+   
+     <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-<!-- google font link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
-<!-- font awesome link -->
-<script src="https://kit.fontawesome.com/62f5df6ae3.js" crossorigin="anonymous"></script>
-
-<!-- css link -->
-<link rel="stylesheet" href="about.css">
-    <title>about</title>
-    
-     <!--slider -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  
-  </head>
-  <body>
-
-<?php
-include 'header.php'
-?>
-
-<section class="main">
-  <div class="container py-5">
-    <div class="row py-5">
-      <div class="col-lg-7 ">
-          <h1 class="pt-5">Nature Has Always Cared For Us!</h1>
-           <button class="btn1 mt-3">Explore</button>
-        </div>
-      </div>
-  </div>
-  </section>
-
- <div class="section">
-   <div class="container">
-     <div class="title">
-        <h2 class="head">ABOUT US</h2>
-     </div>
-     <!-- <div class="content">
-       <div class="image-section">
-             <img src="image/bk5.jpg" alt="" srcset="" >
-          </div> -->
-
-           <div id="slide-wrap">
-        <section class="image-section">
-          <ul class="slider1">
-            <li><img src="image/bk6.jpg" height="300px" width="100%" alt=""></li>
-            <li><img src="image/bk5.jpg" height="350px" width="100%" alt=""></li>
-            <li><img src="image/bk3.jpg" height="350px" width="100%" alt=""></li>
-          </ul>
-        </section>
-      <br>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
      
-       <div class="article">
-          <p> We are online vegetable & fruits store. We deliver fresh vegetables and fruits.<br> 
-              You can buy our produt, add to cart fill your address for delivery. We aim to<br> 
-              change the traditionally way of buying vegetables and fruits.
-          </p>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css"> 
+     
 
-          <p>You don't have to waste your time on buying fruits and vegetables to a local <br>
-             markets bargining with shopkeepers and bring your bag. With us you can <br> 
-             select the product you want and buy online.We offer classic deals with <br>
-             lowest prices and best quality products.Also, we take you to satisfy  your <br>
-             hunger,we are then there for you at the time of your adrenaline cravings! <br>
-          </p>
 
-          <p> Our goal is to make you healthy and serve you fresh products for lifetime. 
-              <br>So, get along with us and enjoy the bestfood you want!   
-          </p>
-          <div class="button">
-         <a href="vegetable.php">Shop Now</a>
-       </div>
-       </div> 
-      </div>
-   </div>
- </div>
-<div>
-<br>
-<?php
-include 'footer.php'
-?>
-</div>
+    <title>About</title>
+</head>
 
-  </body>
+<body>
 
-  <!-- SCRIPTS -->
-  <script>
-    $(document).ready(function(){
-      $('.slider1').bxSlider({
-        mode: 'fade',
-      });
-      $('.slider2').bxSlider({
-        mode: 'fade',
-      });
-      $('.slider3').bxSlider({
-        mode: 'fade',
-      });
-    });
-  </script>
+    <header id="header"> 
+    <nav>
+        <div class="logo">
+            <a href="#">Hamro Dairy<span></span></a>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="home.php" data-navitem="Home">Home</a></li>
+            <li><a href="contact.php" data-navitem="contact">Contact</a></li>
+            <li><a href="product.php" data-navitem="product">Product</a></li>
+            <li><a href="about.php" data-navitem="about">About</a></li>
+            <li><a href="adminlogin.php" data-navitem="adminlodin">Adminlogin</a></li>
+            <li>
+            <?php
+                            // session_start();
+                            if(isset($_SESSION['uname'])){
+                                ?>
+                            <a class="nav-item dropdown">
+                            <?php
+                            echo $_SESSION['uname'];
+                          ?>
+                            </a>
+                            <!-- <ul> -->
+                                <li><a href="logout.php">Logout</a></li>
+                            <!-- </ul> -->
+                            <?php
+                            }else{
+                            ?>
+                            <a href="login.php">Login</a>
+                            <?php
+                            }
+                             ?>
+        </li>
+        </ul>
+
+        <form class="d-flex">
+            <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn0 " type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="icon-links">
+            <div id="customer-center"><span class="icon-phone-alt"></span></div>
+            <div id="icon-shopping-cart"><span class="icon-cart-arrow-down"><span id="item-counter">0</span></div>
+            <div id="login-or-signup"><span class="icon-user"></div>
+            </div>
+         </nav> 
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <h3>Dairy products or milk products, also known as lacticinia, are food products made from milk. </h3>
+                    <p>Dairy products include common grocery store food items in the Western world such as yogurt, cheese and butter.
+                        Many dairy product are available in our dairy like milk,butter, cheese, ice cream, yogurt, condensed and dried milk and many more.
+                    </p>
+                    <div class="button">
+                        <a href="product.php">Explore More</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+            <img class="img-fluid mb-3" src="Newimage/pexels-charlotte-may-5947032.jpg"  style="height:400px"  alt="" >
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+
+</body>
+
 </html>
-

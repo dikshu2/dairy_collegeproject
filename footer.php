@@ -35,7 +35,7 @@
       <div class="col-lg-11 py-4">
         <div class="row">
           <div class="col-lg-3">
-            <h5 class="pb-2">Vege</h5>
+            <h5 class="pb-2">Dairy</h5>
             <p>Nature Has Always Cared For Us!</p>
           </div>
           
@@ -59,7 +59,7 @@
           <div class="col-lg-3">
             <h5 class="pb-2">Contact Us</h5>
             <p>9808755652</p>
-            <p>vege@gmail.com</p>
+            <p>hamro@gmail.com</p>
             <br>
             <h5 class="pb-2">Follow us</h5>
             <span><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a></span>
