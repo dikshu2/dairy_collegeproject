@@ -25,6 +25,6 @@
 	// die("Email/number already exist.");
 	// }
 		echo " Data inserted successfully.";	
-        header('location:navbar.php');
+        header('location:home.php');
 	}
  ?>

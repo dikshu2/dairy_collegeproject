@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -17,32 +18,32 @@
     <form action="database.php" id="form" method="post" onsubmit="return submitForm()" >
       <div class="input-box">
       <div class="input-control">
-        <input type="text" id="username" name="uname" placeholder="Enter your name" auto-complete=off ><span id="uspan"></span>
+        <input type="text" id="username" name="uname" placeholder="Enter your name" auto-complete=off onkeyup="return submitForm()"><span id="uspan"></span>
         <div class="error"></div>
       </div>
       </div>
       <div class="input-box" >
       <div class="input-control">
-        <input type="email" name="email" id="uemail" placeholder="Enter your email" auto-complete=off><span id="espan"></span>
+        <input type="email" name="email" id="uemail" placeholder="Enter your email" auto-complete=off onkeyup="return submitForm()"><span id="espan"></span>
         <div class="error"></div>
 </div>
       </div>	  
       <div class="input-box">
       <div class="input-control">
-        <input type="text" name="address" id="uaddress" placeholder="Enter your address" ><span id="aspan"></span>    
+        <input type="text" name="address" id="uaddress" placeholder="Enter your address" onkeyup="return submitForm()"><span id="aspan"></span>    
         <div class="error"></div>
 </div>
       </div>
       <div class="input-box">
         <div class="input-control">
-        <input type="text" name="phonenumber" id="unumber"  placeholder="Enter your phonenumber" ><span id="cspan"></span>
+        <input type="text" name="phonenumber" id="unumber"  placeholder="Enter your phonenumber" onkeyup="return submitForm()"><span id="cspan"></span>
         
         <div class="error"></div>
 </div>
       </div>
       <div class="input-box">
       <div class="input-control">
-        <input type="password" id="upassword" name="password" placeholder="Create password"  ><span id="pspan"></span>
+        <input type="password" id="upassword" name="password" placeholder="Create password"  onkeyup="return submitForm()"><span id="pspan"></span>
         
         <div class="error"></div>
 </div>
@@ -51,7 +52,7 @@
       
       <div class="input-box">
       <div class="input-control">
-        <input type="password" id="upassword2" name="password2" placeholder="Confirm password" ><span id="rspan"></span>
+        <input type="password" id="upassword2" name="password2" placeholder="Confirm password" onkeyup="return submitForm()"><span id="rspan"></span>
         
         <div class="error"></div>
 </div>
@@ -59,7 +60,7 @@
       
       
       <div class="input-box button">
-        <input type="submit" value="Register now" name="submit">
+        <input type="submit" value="Register now" name="submit" onsubmit="return submitForm()">
       </div>
       <div class="text">
         <h3>Already have an account? <a href="login.php">Login now</a></h3>

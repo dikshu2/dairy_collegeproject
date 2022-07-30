@@ -21,6 +21,7 @@ if(isset($_GET['err'])&& $_GET['err']==2){?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <title>User Login</title>
   </head>
+  <?php include "header.php"?>
   <body>
 
     <div class="container">
@@ -35,7 +36,7 @@ if(isset($_GET['err'])&& $_GET['err']==2){?>
             <i class="fas fa-lock"></i>
             <input type="password" name="password" placeholder="Password" required>
           </div>
-          <div class="pass"><a href="#">Forgot password?</a></div>
+          <!-- <div class="pass"><a href="#">Forgot password?</a></div> -->
           <div class="row button">
             <input type="submit" value="Login">
           </div>
@@ -43,7 +44,5 @@ if(isset($_GET['err'])&& $_GET['err']==2){?>
         </form>
       </div>
     </div>
-
-
   </body>
 </html>

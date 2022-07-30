@@ -15,11 +15,12 @@ if($result->num_rows==1){
     $_SESSION['admin_username']=$row['username'];
     $_SESSION['admin_password']=$row['password'];
 
-    header('location:dashboard.php');
+    header('location:admin/admindashboard.php');
 
 }else{
     header('location:adminlogin.php?err=2');
 }
+
 
 // $operation=executeQuery(selectQuery("register",["username"=>$username,"userpassword"=>$password]));
 // $result=mysqli_fetch_assoc($operation);

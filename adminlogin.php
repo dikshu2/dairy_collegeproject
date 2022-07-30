@@ -15,7 +15,9 @@ if(isset($_GET['err'])&& $_GET['err']==2){?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
   <body>
-
+<?php
+include'header.php';
+?>
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Admin Login Form</span></div>

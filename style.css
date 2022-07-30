@@ -102,7 +102,7 @@
 }
 
 .main {
-    background-image: url('Newimage/background.jpg');
+    /* background-image: url('Newimage/background.jpg'); */
     background-size: cover;
     height: 100vh;
     background-position: 50% 50%;
@@ -201,4 +201,10 @@
     text-decoration: none;
     color: white;
     margin: -34px;
+}
+#uspan,
+#lspan,
+#espan,
+#mspan {
+    color: red;
 }

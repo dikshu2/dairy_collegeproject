@@ -2,5 +2,5 @@
 session_start();
 $_SESSION["uname"] = "";
 session_destroy();
-header("Location: navbar.php");
+header("Location: home.php");
 ?>

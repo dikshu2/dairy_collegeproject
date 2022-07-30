@@ -2,18 +2,15 @@
 <?php 
 	$db = mysqli_connect('localhost', 'root', '', 'miniproject');
 
-	// if (isset($_POST['submit'])) {
+	//if (isset($_POST['submit'])) {
 		$firstname = $_POST['fname'];
         $lastname = $_POST['lname'];
 
         $email = $_POST['email'];
-        $msg= $_POST['message'];
+        $msng= $_POST['message'];
         
-		echo $firstname;
-		echo $msg;
-
-	if(mysqli_query($db, "INSERT INTO tbl_contact (first_name, last_name, email, message) VALUES 
-			('$firstname','$lastname', '$email','$msg')")) {
+			if(mysqli_query($db, "INSERT INTO contact_page (firstname, lastname, email, message) VALUES 
+			('$firstname','$lastname', '$email','$msng')")) {
 	// 	$sqlcheck= "SELECT * from student where email='$email' OR phonenumber='$phonenumber'";
 	// 	$checkresult= $db->query($sqlcheck);
 	// if(!$checkresult->num_rows==0){
@@ -27,5 +24,5 @@
 		$msg = "Failed to save contact.";
         header('location:contact.php?errmsg='.$msg);
 	}
-	// }
+	//}
  ?>
