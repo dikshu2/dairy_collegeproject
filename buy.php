@@ -1,6 +1,23 @@
 <?php
+session_start();
 include('connect.php');
-$data=mysqli_query($conn,"SELECT * FROM customer ORDER BY id DESC LIMIT 1");?>
+//$data=mysqli_query($conn,"SELECT * FROM customer ORDER BY id DESC LIMIT 1");
+$data =mysqli_query($conn,"SELECT * FROM customer_order
+INNER JOIN customer
+ON customer_order.order_id=customer.Id;");?>
+<head>
+	<style>
+.center{
+            width:100px;
+            /*height:200px; */
+            /* position: relative;
+            background-color: pink;
+            top: 50%;
+            left: 50%; */
+        }
+		</style>
+</head>
+<body>
 <h1 style="text-align: center; ">!THANK YOU!</h1>
 <div class="container text-center mt-5 py-5">
             <h3 style="color:blue;text-align: center;">YOUR ORDER HAS BEEN PLACED SUCCESFULLY</h3>
@@ -27,39 +44,45 @@ $data=mysqli_query($conn,"SELECT * FROM customer ORDER BY id DESC LIMIT 1");?>
 <table style="transform: translateX(300px);">
 <thead>
 	<tr>
-		<td>Name:</td>
-		<td>Phone:</td>
-		<td>Email:</td>
-		<td>Address:</td>
-		<td>Total:</td>
-		<td>Item_name</td>
+		<th>Name</th>
+		<th>Phone</th>
+		<th>Email</th>
+		<th>Address</th>
+		<th>Item_name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Payment</th>
 	</tr>
 
 </thead>
 <tbody>
 	<?php
-foreach ($data as  $value) {?>
- 
+foreach ($data as  $value) {
+	if($value['order_id'] == $_SESSION['order']){
+	?>
 	<tr>
 		<td><?php echo $value["Fullname"];?></td>
 		<td><?php echo $value["Phone"];?></td>
 		<td><?php echo $value["Email"];?></td>
 		<td><?php echo $value["address"];?></td>
-		<td><?php echo $value["Total"];?></td>
-		<td><?php echo $value["item_name"]; ?></td>
+		<td><?php echo $value["item_name"];?></td>
+		<td><?php echo $value["price"];?></td>
+		<td><?php echo $value["quantity"];?></td>
+		<td><?php echo $value["Delivery"];?></td>
 	</tr>
-	<?php	
+	<?php }	
 }
 ?>
+	<form action="update.php" method="post">
+				<td colspan="2" style="font-weight:bold;">Press Ok to successfully send order</td>
+				<td><input type="submit" class="center" name="ok" value="Ok" style="background-color:pink;"> </td>
+				<td colspan="4" style="font-weight:bold;">Press cancel to cancel order or add more item in cart</td>
+				<td><input type="submit" class="center" name="cancel" value="Cancel" style="background-color:pink;"></td>
+	</form>
 	</tbody>
 </table>
-
-<form action="home.php" method="post">
-	
 	<?php 
-	session_start();
 	if(isset($_SESSION['user_username'])){
-	$data=mysqli_query($conn,"UPDATE customer SET status=1 WHERE id = (SELECT MAX(ID) FROM customer)"); }
-	?>
-	<input type="submit" name="ok" value="Ok" style="background-color:pink;">
-</form>
+	mysqli_query($conn,"UPDATE customer SET status=1 WHERE id = (SELECT MAX(ID) FROM customer)"); }
+            ?>	
+</body>

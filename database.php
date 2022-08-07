@@ -10,13 +10,18 @@
     
     
 	if (isset($_POST['submit'])) {
-		$username = $_POST['name'];
+		$username = $_POST['uname'];
         $email = $_POST['email'];
         $address= $_POST['address'];
         $phonenumber = $_POST['phonenumber'];
 		$password = $_POST['password'];
-		
-
+		$result = mysqli_query($db, "select * from student where email='$email'") or die("Failed to get data");	
+		if(mysqli_num_rows($result)){
+			echo "<script>
+			alert('Email is already used');
+			window.location.href='registration.php';
+			</script>";
+		}
 	mysqli_query($db, "INSERT INTO student (name, email, address, phonenumber, password) VALUES 
 		('$username', '$email','$address','$phonenumber','$password')"); 
 	// 	$sqlcheck= "SELECT * from student where email='$email' OR phonenumber='$phonenumber'";
@@ -25,6 +30,9 @@
 	// die("Email/number already exist.");
 	// }
 		echo " Data inserted successfully.";	
-        header('location:home.php');
+		echo "<script>
+			window.location.href='home.php';
+			</script>";
+        //header('location:home.php');
 	}
  ?>

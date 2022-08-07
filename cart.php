@@ -48,7 +48,7 @@
                   <td>$value[Price]<input type='hidden' class='iprice' value='$value[Price]'></td>
                   <td>
                     <form action='manage_cart.php' method='POST'> 
-                      <input class='text-center iquantity' name='Mod_Quantity' onchange='subTotal();' type='number' value='$value[Quantity]' min='1' max='10'
+                      <input class='text-center iquantity' name='Mod_Quantity' onchange='this.form.submit();' type='number' value='$value[Quantity]' min='1' max='100'>
                       <input type='hidden' name ='Item_Name' value='$value[Item_Name]'>
                     </form>
                   </td>
@@ -62,8 +62,11 @@
                 </tr>                                
                 ";
               }
-            }
+            }            
             ?>
+            <tr>
+            <a href="product.php"> <input type="submit" value="Add more Product" style="background-color:pink;"></a>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -71,7 +74,7 @@
         <form method="post" action="customer.php" onsubmit="return BuyProductValidate()">
           <div class="border bg-light rounded p-4">
             <h4>Grand Total: </h4>
-            <input type="text" name="total" id="gtotal">
+            <input type="text" name="total" id="gtotal" readonly>
             <h5 class="text-right"></h5>
             <br>
             <div class="form-group">
@@ -96,7 +99,8 @@
                 <table>
 
                   <tr>
-                    <td> <input type="hidden" name="item" value=" <?php echo $value["Item_Name"] ?>"></td>
+                    <td> <input type="hidden" name="item" value=" <?php echo $value['Item_Name'] ?>" multiple></td>
+                    <td> <input type="hidden" name="quantity" value="<?php echo $_SESSION['cart'][$key]['Quantity'] ?>" multiple></td>
                   </tr>
                 </table>
             <?php
@@ -107,6 +111,8 @@
             <label>Quantity</label>
             <input type="text" name="quality">
              </div> -->
+             <input type="checkbox" name="cash" value="Cash On Delivery">
+             <label> Cash on delievery</label>
             <br>
             <input type="submit" name="submit" value="Make Purchase" style="background-color: pink" onsubmit="return BuyProductValidate()">
         </form>

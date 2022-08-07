@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="icon.css"> 
-     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
+     <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style1.css"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
          <style type="text/css">
@@ -38,7 +38,7 @@
             <li><a href="contact.php" data-navitem="contact">Contact</a></li>
             <li><a href="product.php" data-navitem="Product">Product</a></li>
             <li><a href="about.php" data-navitem="about">About</a></li>
-            <li><a href="adminlogin.php" data-navitem="adminlodin">Adminlogin</a></li>
+            <!-- <li><a href="adminlogin.php" data-navitem="adminlodin">Adminlogin</a></li> -->
             <li>
              <?php
                             session_start();
@@ -78,8 +78,7 @@
             <input type="submit" name="search" value="Go" id="searchbtn">   
         </form>
     </div>
-    <!-- <li><a href="editinfo.php" class="fa fa-user-circle" aria-hidden="true" ></a><li> -->
-        
+     
         </ul>
          </nav> 
     </header>

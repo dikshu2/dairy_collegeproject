@@ -1,7 +1,11 @@
 <?php
 include('index.php');
 include('../connect.php');
-$data = mysqli_query($conn, "select * from customer"); ?>
+$query = "SELECT * FROM customer
+INNER JOIN customer_order
+ON customer.Id = customer_order.order_id;";
+$data = mysqli_query($conn, $query); ?>
+
 <h1 style="text-align: center;">Confirm Order:</h1>
 <style>
 	table,
@@ -25,6 +29,7 @@ $data = mysqli_query($conn, "select * from customer"); ?>
 	<thead>
 
 		<tr>
+			<th>Order_id</th>
 			<th>Name:</th>
 			<th>Phone:</th>
 			<th>Email:</th>
@@ -39,16 +44,17 @@ $data = mysqli_query($conn, "select * from customer"); ?>
 		<?php
 		foreach ($data as  $value) { ?>
 			<tr>
+				<td><?php echo $value["order_id"]; ?></td>
 				<td> <?php echo $value["Fullname"]; ?></td>
 				<td><?php echo $value["Phone"]; ?></td>
 				<td><?php echo $value["Email"]; ?></td>
 				<td><?php echo $value["address"]; ?></td>
-				<td><?php echo $value["Total"]; ?></td>
+				<td><?php echo $value["price"]; ?></td>
 				<td><?php echo $value["item_name"] ?></td>
 				<td><?php echo $value["quantity"] ?></td>
 			</tr>
-		<?php
-		}
+		<?php }
+		
 		?>
 	</tbody>
 </table>

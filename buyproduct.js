@@ -3,6 +3,7 @@ function BuyProductValidate() {
     email = document.getElementById('mail').value;
     number = document.getElementById('pnumber').value;
     address = document.getElementById('addre').value;
+    gtotal = document.getElementById('gtotal').value;
     pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/gm;
     emailpattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var le = email.lastIndexOf('@gmail.com');
@@ -58,6 +59,9 @@ function BuyProductValidate() {
 
     } else {
         document.getElementById("espan").innerHTML = "";
+    }
+    if(gtotal == 0){
+        return false;
     }
     
     return true;

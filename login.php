@@ -41,6 +41,7 @@ if(isset($_GET['err'])&& $_GET['err']==2){?>
             <input type="submit" value="Login">
           </div>
           <div class="signup-link">Not a member? <a href="registration.php">Signup now</a></div>
+          <div class="signup-link">Sign in as admin <a href="adminLogin.php">Admin Login</a></div>
         </form>
       </div>
     </div>

@@ -21,7 +21,6 @@ include("connect.php");
         $_SESSION['cart'][$count]=array('Item_Name'=>$_POST['Item_Name'],'Price'=>$_POST['Price'],'Quantity'=>1);
         // print_r($_SESSION['cart']);
         echo"<script>
-          alert('Item  Added');
           window.location.href='cart.php';
         </script>";
       }
@@ -31,7 +30,6 @@ include("connect.php");
       $_SESSION['cart'][0]=array('Item_Name'=>$_POST['Item_Name'],'Price'=>$_POST['Price'],'Quantity'=>1);
       // print_r($_SESSION['cart']);
       echo"<script>
-        alert('Item  Added');
         window.location.href='cart.php';
       </script>";
     }
@@ -45,7 +43,6 @@ include("connect.php");
         unset($_SESSION['cart'][$key]); 
         $_SESSION['cart']=array_values($_SESSION['cart']);
         echo"<script>
-          alert('Item Removed');
           window.location.href='cart.php';
         </script>";
       }
