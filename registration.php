@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -13,7 +12,7 @@
    
    </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" style="align-content:centre;">
     <h2>Registration</h2>
     <form action="database.php" id="form" method="post" onsubmit="return submitForm()" >
       <div class="input-box">

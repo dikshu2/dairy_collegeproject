@@ -25,6 +25,7 @@ $data=mysqli_fetch_assoc(mysqli_query($conn,"SELECT * from products where id ='$
 		<label ><h2>product:</h2></label><input type="text" name="product" id="titles" value= "<?php echo $data['product']?>"> <br>
 	<label ><h2>price:</h2></label><input type="text" name="price" id="editfirstaid" value= "<?php echo $data['price']?>">
 	<label ><h2>Quantity:</h2></label><input type="text" name="amount" id="titles" value= "<?php echo $data['quantity']?>"> <br>
+	<label ><h2>Unit:</h2></label><input type="text" name="unit" id="editfirstaid" value= "<?php echo $data['unit']?>"><br>
 	<label ><h2>Discount:</h2></label><input type="text" name="discount" id="editfirstaid" value= "<?php echo $data['discount']?>"><br>
 	<label ><h2>Category:</h2></label><input type="text" name="category" id="editfirstaid" value= "<?php echo $data['category']?>"><br>
 	<label ><h2>Date:</h2></label><input type="date" name="date" id="titles" value= "<?php echo $data['enterdate']?>"> <br>
@@ -42,9 +43,10 @@ if(isset($_POST['ok'])){
     $date=$_POST["date"];
 	$category=$_POST["category"];
     $discount=$_POST["discount"];
+	$unit= $_POST["unit"];
 $updateSQL= "UPDATE ";
 $updateSQL.="products";
-$updateSQL.=" SET product='$product', price='$price',quantity='$quantity',enterdate='$date',discount='$discount',category='$category' where id='".$_SESSION["id_to_edit"]."'";
+$updateSQL.=" SET product='$product', price='$price',quantity='$quantity',enterdate='$date',discount='$discount',category='$category',unit='$unit' where id='".$_SESSION["id_to_edit"]."'";
 $resultUpdate=mysqli_query($conn,$updateSQL);
 if(!$resultUpdate){
 die(mysqli_error($con));

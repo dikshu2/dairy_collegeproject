@@ -9,10 +9,10 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     /* background-image: url("./Newimage/dik.jpg"); */
-    background-color: #eec0c9;
-}
+     background-color: #eec0c9;
+} 
 
 .wrapper {
     position: relative;
@@ -22,7 +22,8 @@ body {
     padding: 34px;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
+   
+} 
 
 .wrapper h2 {
     position: relative;

@@ -55,6 +55,15 @@ include("connect.php");
       if($value['Item_Name']==$_POST['Item_Name'])
       // echo "Item_Name";
       {
+        $result = mysqli_query($conn, "select * from products where product='$value[Item_Name]'") or die("Failed to get data");
+        foreach($result as $product){
+          if($product['quantity']<$_POST['Mod_Quantity']){
+            echo"<script>
+            alert('Quantity exceeds the in stock value');
+            window.location.href='cart.php';
+          </script>";
+          }
+        }
         $_SESSION['cart'][$key]['Quantity']=$_POST['Mod_Quantity']; 
         // print_r($_SESSION['Item_Name']);
         echo"<script>

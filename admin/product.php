@@ -11,7 +11,8 @@ $Quantity=$_POST["amount"];
 $date=$_POST["date"];
 $discount=$_POST["discount"];
 $category=$_POST["category"];
-$insert="INSERT INTO products(product, discount, quantity,enterdate,price,photo,category) values('$product','$discount','$Quantity','$date','$price','$photo','$category') ";
+$unit=$_POST["unit"];
+$insert="INSERT INTO products(product, discount, quantity,enterdate,price,photo,category,unit) values('$product','$discount','$Quantity','$date','$price','$photo','$category','$unit') ";
 mysqli_query($conn,$insert);
 }
 $data_product="SELECT * from products";
@@ -74,6 +75,7 @@ $data=mysqli_query($conn,$data_product);
 	<label><b>Price</b></label></br><input class="textarea" type="text" name="price" style="height: 70px;"><br></br>
 	<label ><b>Discount</b></label></br><input  class="textarea"  type="text" name="discount" style="height: 60px;"><br></br>
     <label ><b>Quantity</b></label></br><input  class="textarea"  type="text" name="amount" style="height: 60px;"><br></br>
+	<label> <b>Unit</b> </label></br><input class="textarea" type="text" name="unit" style="height: 60px;"></br></br>
     <label ><b>Date</b></label></br><input class="textarea" type="date" name="date" style="height: 60px;"><br></br>
 	<label ><b>Category</b></label></br><input class="textarea" type="text" name="category" style="height: 60px;"><br></br>
 	<label><b>Photo:</b></label>
@@ -91,6 +93,7 @@ $data=mysqli_query($conn,$data_product);
         <td class="space"><h3>Product</h3></td>
 			<td class="space"><h3>Price</h3></td>
 		<td class="space"><h3>Quantity</h3></td>
+		<td class="space"><h3>Quantity</h3></td>
         <td class="space"><h3>Discount</h3></td>
 		<td class="space"><h3>Category</h3></td>
         <td class="space"><h3>Date</h3></td>
@@ -107,6 +110,7 @@ foreach($data as $value){
 	<td id= "tbl_title"><b><h3><?php print_r( $value['product']); ?></h3><b> </td>
 		<td id="tbl_firstaids"><b><h3><?php print_r($value['price']); ?></h3></b></td>
         	<td id= "tbl_title"><b><h3><?php print_r( $value['quantity']); ?></h3><b> </td>
+			<td id= "tbl_title"><b><h3><?php print_r( $value['unit']); ?></h3><b> </td>
 		<td id="tbl_firstaids"><b><h3><?php print_r($value['discount']); ?></h3></b></td>
 		<td id="tbl_firstaids"><b><h3><?php print_r($value['category']); ?></h3></b></td>
         <td id= "tbl_title"><b><h3><?php print_r( $value['enterdate']); ?></h3><b> </td>
